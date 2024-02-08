@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks - SSL & TLS.md",
+                "file": "DNS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,8 +84,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -105,6 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,6 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +143,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DNS.md"
+              }
             }
           }
         ]
@@ -162,21 +165,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5292730d55a46a15",
+  "active": "281af5ff9cb7ccab",
   "lastOpenFiles": [
-    "Networks - SSL & TLS.md",
-    "Networks - The OSI Model.md",
-    "Networks - Network Address Translation (NAT).md",
-    "Networks - Networking Basics.md",
     "AWS - AWS Learning.md",
+    "DNS.md",
+    "Pasted image 20240208232635.png",
+    "Pasted image 20240208231753.png",
+    "Pasted image 20240208231656.png",
+    "Pasted image 20240208231444.png",
+    "Pasted image 20240208231055.png",
+    "Networking Basics.md",
     "Encryption & Hashing.md",
+    "The OSI Model.md",
+    "Network Address Translation (NAT).md",
+    "SSL & TLS.md",
     "Digital Signatures.md",
     "Pasted image 20240208225307.png",
     "Pasted image 20240208221441.png",
     "Pasted image 20240208214956.png",
     "Pasted image 20240208214315.png",
     "Pasted image 20240208185325.png",
-    "Pasted image 20240208185108.png",
     "Welcome.md"
   ]
 }
