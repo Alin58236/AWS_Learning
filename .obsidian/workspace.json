@@ -1,40 +1,18 @@
 {
   "main": {
-    "id": "f0884606e7dafff4",
+    "id": "ebf08f0f9d919cc3",
     "type": "split",
     "children": [
       {
-        "id": "52a7f033b7623eab",
+        "id": "c37f4a0d2d49a5f0",
         "type": "tabs",
-        "dimension": 66.75126903553299,
         "children": [
           {
-            "id": "281af5ff9cb7ccab",
+            "id": "310fc63a5533c597",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Digital Signatures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "1cab6c308eefe232",
-        "type": "tabs",
-        "dimension": 33.24873096446701,
-        "children": [
-          {
-            "id": "bbeb7473647409c9",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "graph",
-              "state": {},
-              "pinned": true
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -43,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e69a28595c160920",
+    "id": "652e853994198739",
     "type": "split",
     "children": [
       {
-        "id": "e5bd2b0b21d7ac52",
+        "id": "64e3a7812d4f1e79",
         "type": "tabs",
         "children": [
           {
-            "id": "dc2b812c6a132a57",
+            "id": "8af00a78ba7c2004",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -61,12 +39,12 @@
             }
           },
           {
-            "id": "5292730d55a46a15",
+            "id": "e3ec8c9bb334884e",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#cloud",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +54,7 @@
             }
           },
           {
-            "id": "1a2bbcdfe4b67760",
+            "id": "734e6a9fad973a66",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -90,20 +68,19 @@
     "width": 300
   },
   "right": {
-    "id": "f7b3c7dc6a461d9e",
+    "id": "310337bdac3df698",
     "type": "split",
     "children": [
       {
-        "id": "6ae7d39b49e3ce4a",
+        "id": "0dc4459a14a6acb7",
         "type": "tabs",
         "children": [
           {
-            "id": "061309d2c99ce4ef",
+            "id": "f2d7e1fd4c65a9f8",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Digital Signatures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,19 +92,18 @@
             }
           },
           {
-            "id": "f3c042aae47adb1a",
+            "id": "c83459c654687b88",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Digital Signatures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "1066ca38a3effd12",
+            "id": "37d543532ca90d1a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -138,13 +114,11 @@
             }
           },
           {
-            "id": "c3d75fea8838dff3",
+            "id": "cd4cf7d53c6c3217",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Digital Signatures.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -164,29 +138,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "281af5ff9cb7ccab",
-  "lastOpenFiles": [
-    "img/Pasted image 20240208185108.png",
-    "img",
-    "Kubernetes.md",
-    "img/Pasted image 20240208233626.png",
-    "img/Pasted image 20240208233425.png",
-    "AWS - AWS Learning.md",
-    "DNS.md",
-    "img/Pasted image 20240208232635.png",
-    "img/Pasted image 20240208231753.png",
-    "img/Pasted image 20240208231656.png",
-    "img/Pasted image 20240208231444.png",
-    "img/Pasted image 20240208231055.png",
-    "Networking Basics.md",
-    "Encryption & Hashing.md",
-    "The OSI Model.md",
-    "Network Address Translation (NAT).md",
-    "SSL & TLS.md",
-    "Digital Signatures.md",
-    "img/Pasted image 20240208225307.png",
-    "img/Pasted image 20240208221441.png",
-    "img/Pasted image 20240208214956.png",
-    "Welcome.md"
-  ]
+  "active": "310fc63a5533c597",
+  "lastOpenFiles": []
 }

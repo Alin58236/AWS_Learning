@@ -29,7 +29,7 @@
       }
     },
     {
-      "query": "tag:#cloud",
+      "query": "tag:#orchestration",
       "color": {
         "a": 1,
         "rgb": 549828
