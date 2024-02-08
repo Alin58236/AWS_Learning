@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "f0884606e7dafff4",
+    "type": "split",
+    "children": [
+      {
+        "id": "52a7f033b7623eab",
+        "type": "tabs",
+        "dimension": 24.1751269035533,
+        "children": [
+          {
+            "id": "a386386a1031bd13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "7a0fdd63591f6f25",
+        "type": "tabs",
+        "dimension": 75.8248730964467,
+        "children": [
+          {
+            "id": "d1a4f99e78f421e4",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e69a28595c160920",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5bd2b0b21d7ac52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc2b812c6a132a57",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5292730d55a46a15",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1a2bbcdfe4b67760",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f7b3c7dc6a461d9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ae7d39b49e3ce4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "061309d2c99ce4ef",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f3c042aae47adb1a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1066ca38a3effd12",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c3d75fea8838dff3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d1a4f99e78f421e4",
+  "lastOpenFiles": [
+    "AWS Learning.md",
+    "SSL & TLS.md",
+    "Networking Basics.md",
+    "Network Address Translation (NAT).md",
+    "Pasted image 20240208185325.png",
+    "Pasted image 20240208185108.png",
+    "The OSI Model.md",
+    "Welcome.md"
+  ]
+}
