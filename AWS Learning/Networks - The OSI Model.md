@@ -84,3 +84,6 @@ The Session layer establishes, maintains, and terminates communication sessions 
 #### Example:
 
 An example of the Session layer in action is during a web browsing session. When you visit a website, your web browser establishes a session with the web server to request and receive web pages. The Session layer handles the setup of this session, including authentication if necessary. During the session, the Session layer manages the exchange of data between the browser and the server, ensuring that web pages are delivered correctly. When you close the browser or navigate away from the website, the Session layer terminates the session gracefully, releasing resources and closing connections.
+
+
+#networking 

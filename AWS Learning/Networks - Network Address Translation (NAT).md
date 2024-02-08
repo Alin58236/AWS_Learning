@@ -11,3 +11,6 @@ NAT only makes sense for IPv4 and it translates public IPs to private IPs using 
 
 PAT
 ![[Pasted image 20240208185325.png]]
+
+
+#networking 

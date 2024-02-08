@@ -6,16 +6,17 @@
       {
         "id": "52a7f033b7623eab",
         "type": "tabs",
-        "dimension": 24.1751269035533,
+        "dimension": 66.75126903553299,
         "children": [
           {
-            "id": "a386386a1031bd13",
+            "id": "281af5ff9cb7ccab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS Learning.md",
+                "file": "Networks - SSL & TLS.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -23,16 +24,18 @@
         ]
       },
       {
-        "id": "7a0fdd63591f6f25",
+        "id": "1cab6c308eefe232",
         "type": "tabs",
-        "dimension": 75.8248730964467,
+        "dimension": 33.24873096446701,
         "children": [
           {
-            "id": "d1a4f99e78f421e4",
+            "id": "bbeb7473647409c9",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "graph",
-              "state": {}
+              "state": {},
+              "pinned": true
             }
           }
         ]
@@ -64,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +84,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -158,15 +162,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1a4f99e78f421e4",
+  "active": "5292730d55a46a15",
   "lastOpenFiles": [
-    "AWS Learning.md",
-    "SSL & TLS.md",
-    "Networking Basics.md",
-    "Network Address Translation (NAT).md",
+    "Networks - SSL & TLS.md",
+    "Networks - The OSI Model.md",
+    "Networks - Network Address Translation (NAT).md",
+    "Networks - Networking Basics.md",
+    "AWS - AWS Learning.md",
+    "Encryption & Hashing.md",
+    "Digital Signatures.md",
+    "Pasted image 20240208225307.png",
+    "Pasted image 20240208221441.png",
+    "Pasted image 20240208214956.png",
+    "Pasted image 20240208214315.png",
     "Pasted image 20240208185325.png",
     "Pasted image 20240208185108.png",
-    "The OSI Model.md",
     "Welcome.md"
   ]
 }
