@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DNS.md",
+                "file": "Kubernetes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DNS.md",
+                "file": "Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DNS.md",
+                "file": "Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DNS.md"
+                "file": "Kubernetes.md"
               }
             }
           }
@@ -167,7 +167,10 @@
   },
   "active": "281af5ff9cb7ccab",
   "lastOpenFiles": [
+    "Pasted image 20240208233626.png",
+    "Pasted image 20240208233425.png",
     "AWS - AWS Learning.md",
+    "Kubernetes.md",
     "DNS.md",
     "Pasted image 20240208232635.png",
     "Pasted image 20240208231753.png",
@@ -184,7 +187,6 @@
     "Pasted image 20240208221441.png",
     "Pasted image 20240208214956.png",
     "Pasted image 20240208214315.png",
-    "Pasted image 20240208185325.png",
     "Welcome.md"
   ]
 }
