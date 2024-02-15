@@ -62,8 +62,6 @@ print("Ciphertext:", ciphertext)
 print("Decrypted text:", decrypted_text)
 ```
 
-
-
 ### Steganography
 
 Sometimes encryption is not as efficient as we would expect mainly because if we see a ciphertext we don't know what it means, but we surely see that it is a ciphertext..

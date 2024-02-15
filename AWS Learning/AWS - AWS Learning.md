@@ -7,6 +7,7 @@ This will also include some network basics and security basics which can be foun
 - [[Kubernetes]]
 
 
+## [[Chapter 1 - AWS fundamentals]]
 
 
 

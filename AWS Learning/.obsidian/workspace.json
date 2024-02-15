@@ -6,7 +6,7 @@
       {
         "id": "52a7f033b7623eab",
         "type": "tabs",
-        "dimension": 66.75126903553299,
+        "dimension": 60.59644670050761,
         "children": [
           {
             "id": "281af5ff9cb7ccab",
@@ -14,8 +14,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Digital Signatures.md",
+                "file": "Chapter 1 - AWS fundamentals.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -25,7 +26,7 @@
       {
         "id": "1cab6c308eefe232",
         "type": "tabs",
-        "dimension": 33.24873096446701,
+        "dimension": 39.40355329949238,
         "children": [
           {
             "id": "bbeb7473647409c9",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Digital Signatures.md",
+                "file": "Chapter 1 - AWS fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Digital Signatures.md",
+                "file": "Chapter 1 - AWS fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Digital Signatures.md"
+                "file": "Chapter 1 - AWS fundamentals.md"
               }
             }
           }
@@ -164,29 +165,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "281af5ff9cb7ccab",
+  "active": "bbeb7473647409c9",
   "lastOpenFiles": [
+    "Chapter 1 - AWS fundamentals.md",
+    "Elastic Compute Cloud (EC2) Basics.md",
+    "AWS - AWS Learning.md",
+    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
+    "Pasted image 20240210153508.png",
+    "Pasted image 20240210153419.png",
+    "Pasted image 20240210153328.png",
+    "Kubernetes.md",
+    "SSL & TLS.md",
+    "Networking Basics.md",
+    "Encryption & Hashing.md",
+    "DNS.md",
+    "Digital Signatures.md",
+    "Network Address Translation (NAT).md",
+    "The OSI Model.md",
     "img/Pasted image 20240208185108.png",
     "img",
-    "Kubernetes.md",
     "img/Pasted image 20240208233626.png",
     "img/Pasted image 20240208233425.png",
-    "AWS - AWS Learning.md",
-    "DNS.md",
     "img/Pasted image 20240208232635.png",
     "img/Pasted image 20240208231753.png",
     "img/Pasted image 20240208231656.png",
     "img/Pasted image 20240208231444.png",
-    "img/Pasted image 20240208231055.png",
-    "Networking Basics.md",
-    "Encryption & Hashing.md",
-    "The OSI Model.md",
-    "Network Address Translation (NAT).md",
-    "SSL & TLS.md",
-    "Digital Signatures.md",
-    "img/Pasted image 20240208225307.png",
-    "img/Pasted image 20240208221441.png",
-    "img/Pasted image 20240208214956.png",
     "Welcome.md"
   ]
 }
