@@ -71,9 +71,35 @@ AWS has public services as well as private services (depending on the IP address
 		
 		**Connecting to EC2**
 		- Through RDP (port 3389) on Windows using Private key and local admin password
-		- Through SSH or PuTTy on Linux (port 22) using Private Key
+		- Through SSH or PuTTY on Linux (port 22) using Private Key
+
+- ## Simple Storage Service (S3) Basics ##
+
+	- **Global** Storage Platform (**Regional Resilient**) -> **can withstand an AZ outage**
+	- **Public service**, unlimited data & designed for **multi-user**
+	- Perfect for hosting large amounts of data (**Movies, Audio, Photos, Text, Large Datasets**) and to be used as **INPUT** or **OUTPUT**
+	- **Economical**
+	- Accessed via **UI**/**CLI**/**API**/**Http**
+	- It delivers 2 things:
+		- **objects (files)**
+		- **buckets (storage units / containers for objects)**
+
+	- Every object has a **key (name)**, a **value (the content)** and a **bucket** where it is stored
+	- the value can have **from 0 bytes up to 5 TB**
+	- ![[Pasted image 20240216131210.png]]
+
+	- Buckets are created **inside a region**
+	- The data inside it never leaves the region unless configured to do so
+	- **Bucket Names must be globally unique, 3-63 chars all lowercase & no underscore**, ***can't*** **be formatted as an IP, and has to begin with a letter or number**
+	- No. of buckets created - 100 soft limit, and 1000 hard limit per account
+	
+	- ***To be noted that it is not a filesystem, the structure is flat and everything is stored at the root bucket level***
+
+	- There is no concept of filetype (if we have a img4.jpeg, the **".jpeg"** is part of the name)
+	- if there is a file called "something/img4.jpeg" the file will be displayed as being inside a folder called "*something*"
 
 
+	- 
 
 
 
