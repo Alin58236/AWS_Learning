@@ -101,6 +101,55 @@ AWS has public services as well as private services (depending on the IP address
 
 	- 
 
+ - ## CloudFormation (CFN) Basics
+	
+	 - Service for **resource management**
+	 - uses CloudFormation **Templates** to create and delete resources (**YAML or JSON**)
+	 - The **resources section is the only mandatory part** of the CloudFormation template
+	 - The description field must directly follow the **AWSTemplateFormatVersion**
+	 - The **metadata** field can control the UI groupings
+	 - The **parameters** section is used to customize criteria for creation and behavior of resources
+	 - **Mappings** is a section that allows us to create lookup tables
+	 - **Conditions** allow decision making in the template
+
+		![[Pasted image 20240220220454.png]]
+			*A CloudFormation Template that creates an ec2 instance*
+			
+	- When you create a template, the CloudFormation creates a **"Stack"** which contains all the *logical resources* that you create
+	- For any logical resource in the stack, CloudFormation creates an **actual physical instance (is CFNs job to keep the stack and the template in sync)**
+	 ![[Pasted image 20240220221916.png]]
+
+- ## CloudWatch (CW) Basics
+
+	- used for ops management and monitoring
+	- it collects and manages data
+	- **Metrics** - AWS Products, Apps, On-Premises
+		- Is a **public** service
+		- **CloudWatch Agent** is needed in order to gather metrics outside of AWS
+	- **CloudWatch Logs** - AWS Products, Apps, On-Premises
+	- **CloudWatch Events** - AWS Services & Schedules
+
+	![[Pasted image 20240221013829.png]]
+						*CloudWatch Architecture*
+
+	- **Namespaces** are containers for storing data related to metrics (keeps things from getting messy)
+	- All metric data in AWS goes into a namespace called **AWS/service**
+	- ***Metric = Time ordered set of data points***
+	![[Pasted image 20240221014157.png]]
+
+	- **Dimensions** - used to separate and filter datapoints in metrics
+
+	![[Pasted image 20240221014356.png]]
+
+	- **Alarms** - A metric state which has values ( OK or Alarm). For the latter, an action is triggered
+
+- ## Shared Responsibility Model
+		![[Pasted image 20240222011410.png]]
+
+	- ***High Availability (HA)*** - **ensures** an agreed level of operational **performance**, usually **uptime**, for a **higher than normal period** (does not mean there's no faults, and it's not about user experience, but maximizing uptime)
+	- ***Fault Tolerance (FT)*** - enables a system to **continue operating properly** in the event of the **failure of some** (1 or more) of it's **components**
+	- ***Disaster Recovery (DT)*** a set of policies, tools and procedures to **enable the recovery** or **continuation** of vital technology infrastructure and systems **following a disaster**
+	
 
 
 #AWS_Learning

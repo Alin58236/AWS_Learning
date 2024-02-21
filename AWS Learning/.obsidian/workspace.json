@@ -6,7 +6,7 @@
       {
         "id": "52a7f033b7623eab",
         "type": "tabs",
-        "dimension": 60.59644670050761,
+        "dimension": 69.28934010152285,
         "children": [
           {
             "id": "281af5ff9cb7ccab",
@@ -26,7 +26,7 @@
       {
         "id": "1cab6c308eefe232",
         "type": "tabs",
-        "dimension": 39.40355329949238,
+        "dimension": 30.710659898477157,
         "children": [
           {
             "id": "bbeb7473647409c9",
@@ -164,28 +164,28 @@
   "active": "bbeb7473647409c9",
   "lastOpenFiles": [
     "Chapter 1 - AWS fundamentals.md",
+    "Pasted image 20240222011410.png",
+    "Pasted image 20240221014356.png",
+    "Pasted image 20240221014157.png",
+    "Pasted image 20240221013829.png",
+    "Pasted image 20240220221916.png",
+    "Pasted image 20240220220454.png",
+    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
+    "AWS - AWS Learning.md",
+    "Digital Signatures.md",
+    "Network Address Translation (NAT).md",
+    "DNS.md",
+    "SSL & TLS.md",
+    "Networking Basics.md",
     "Pasted image 20240216131210.png",
     "Elastic Compute Cloud (EC2) Basics.md",
-    "AWS - AWS Learning.md",
-    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
     "Pasted image 20240210153508.png",
     "Pasted image 20240210153419.png",
     "Pasted image 20240210153328.png",
     "Kubernetes.md",
-    "SSL & TLS.md",
-    "Networking Basics.md",
     "Encryption & Hashing.md",
-    "DNS.md",
-    "Digital Signatures.md",
-    "Network Address Translation (NAT).md",
     "The OSI Model.md",
-    "img/Pasted image 20240208185108.png",
     "img",
-    "img/Pasted image 20240208233626.png",
-    "img/Pasted image 20240208233425.png",
-    "img/Pasted image 20240208232635.png",
-    "img/Pasted image 20240208231753.png",
-    "img/Pasted image 20240208231656.png",
     "Welcome.md"
   ]
 }
