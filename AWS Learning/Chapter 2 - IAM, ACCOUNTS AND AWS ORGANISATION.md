@@ -16,7 +16,9 @@
 	
 	- It is **NOT** a good practice to give the **same individual policy (inline policy) to multiple individuals** that need the same access ( *hard to manage if there are 400 persons that need that access, or even worse, that need the same access changes*). A solution would be to create a **MANAGED POLICY** (which is an object on it's own) and give it to multiple persons (change in only one place).
 	- **MANAGED POLICIES should be used for the default policies in an org**
+	- **Managed policies can be either ****"AWS MANAGED"** (existing template policies such as ***ChangePasswordAfterLogIn***), or **"Customer Managed"** (created by users with CloudFormation)
 	- **INLINE POLICIES should be used for custom, exceptional policies for identities**
+	
 
 - ## IAM Users and ARNs
 	- ARNs (Amazon Resource Names) are used to uniquely identify any AWS resource within an AWS Account
@@ -30,6 +32,8 @@
 
 - ## Simple Identity Permissions
 	
+	- In the simpleidentitypermissions folder in the git repo, there is a cloudformation yaml file that contains an iam account and multiple resources. One of the resource is a policy. NOTE that the policy is just created, not automatically applied to the iam user
+	- That is created as a managed policy, and has to be set to the iam user by the admin!
 	- 
 
 
