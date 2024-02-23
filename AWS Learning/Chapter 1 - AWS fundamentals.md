@@ -149,7 +149,24 @@ AWS has public services as well as private services (depending on the IP address
 	- ***High Availability (HA)*** - **ensures** an agreed level of operational **performance**, usually **uptime**, for a **higher than normal period** (does not mean there's no faults, and it's not about user experience, but maximizing uptime)
 	- ***Fault Tolerance (FT)*** - enables a system to **continue operating properly** in the event of the **failure of some** (1 or more) of it's **components**
 	- ***Disaster Recovery (DT)*** a set of policies, tools and procedures to **enable the recovery** or **continuation** of vital technology infrastructure and systems **following a disaster**
+
+- ## Route53 Basics
+
+	- Provides 2 main services:
+		- 1. **Register domains**
+		- 2. **Host Zones.. Managed nameservers**
+		
+	- Is a global service, single database
 	
+	- Globally resilient
+	- 
+	 ##### DNS RECORD TYPES
+	 - **NS Records** (.com, .org, etc.)
+	 - **A Records** ( map host names to ipv4)
+	 - **AAAA Records** ( map host names to ipv6)
+	 - **CNAME Records** ( host -> host)
+	 - **MX Records** (Host -> IP -> SMTP)
+	 - **TXT Records** ( used for adding additional information to DNS Records i.e. proving that the DNS record is genuine)
 
 
 #AWS_Learning
