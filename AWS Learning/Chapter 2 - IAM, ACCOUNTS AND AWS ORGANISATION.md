@@ -19,7 +19,7 @@
 	- **Managed policies can be either ****"AWS MANAGED"** (existing template policies such as ***ChangePasswordAfterLogIn***), or **"Customer Managed"** (created by users with CloudFormation)
 	- **INLINE POLICIES should be used for custom, exceptional policies for identities**
 	
-
+	
 - ## IAM Users and ARNs
 	- ARNs (Amazon Resource Names) are used to uniquely identify any AWS resource within an AWS Account
 	- The ARN format is **arn: partition : service : region : account-id:resource-id**
@@ -28,13 +28,22 @@
 	- **The second ARN doesn't identify the bucket, but all the objects in the bucket!**
 	- Can have 5000 IAM users / account
 	- IAM user can be a member of maximum 10 IAM Groups
-
-
+	
+	
 - ## Simple Identity Permissions
 	
-	- In the simpleidentitypermissions folder in the git repo, there is a cloudformation yaml file that contains an iam account and multiple resources. One of the resource is a policy. NOTE that the policy is just created, not automatically applied to the iam user
-	- That is created as a managed policy, and has to be set to the iam user by the admin!
-	- 
+	- In the simpleidentitypermissions folder in the git repo, there is a CloudFormation YAML file that contains an IAM account and multiple resources. One of the resource is a policy. NOTE that the policy is just created, not automatically applied to the IAM user
+	- That is created as a managed policy, and has to be set to the IAM user by the admin!
+	
+	
+- ## IAM Groups
+	
+	- Containers for managing large numbers on users
+	- Can have policies attached to them that apply to all members
+	- There is no "All Users Group" by default, but you can create one with this specific purpose
+	- Nesting is not supported. We cannot have groups within groups
+	- Soft limit of 300 groups per account
+	- Groups are not a true identity. They can't be referenced as a principal in a policy
 
 
 
