@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:#networking",
@@ -36,16 +36,16 @@
       }
     }
   ],
-  "collapse-display": true,
-  "showArrow": false,
-  "textFadeMultiplier": 0.1,
-  "nodeSizeMultiplier": 1.83541666666667,
-  "lineSizeMultiplier": 1.37604166666667,
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -3,
+  "nodeSizeMultiplier": 2.19270833333333,
+  "lineSizeMultiplier": 1.52916666666667,
   "collapse-forces": false,
   "centerStrength": 0,
-  "repelStrength": 4.79166666666667,
+  "repelStrength": 12.8125,
   "linkStrength": 1,
-  "linkDistance": 253,
-  "scale": 0.6316046762907507,
+  "linkDistance": 192,
+  "scale": 0.6316046762907517,
   "close": true
 }

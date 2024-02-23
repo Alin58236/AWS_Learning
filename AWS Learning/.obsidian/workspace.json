@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 1 - AWS fundamentals.md",
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -104,6 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,6 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +143,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md"
+              }
             }
           }
         ]
@@ -161,17 +165,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bbeb7473647409c9",
+  "active": "281af5ff9cb7ccab",
   "lastOpenFiles": [
+    "Pasted image 20240223201528.png",
+    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
+    "AWS - AWS Learning.md",
     "Chapter 1 - AWS fundamentals.md",
+    "Pasted image 20240223181911.png",
     "Pasted image 20240222011410.png",
     "Pasted image 20240221014356.png",
     "Pasted image 20240221014157.png",
     "Pasted image 20240221013829.png",
     "Pasted image 20240220221916.png",
     "Pasted image 20240220220454.png",
-    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
-    "AWS - AWS Learning.md",
     "Digital Signatures.md",
     "Network Address Translation (NAT).md",
     "DNS.md",
@@ -181,7 +187,6 @@
     "Elastic Compute Cloud (EC2) Basics.md",
     "Pasted image 20240210153508.png",
     "Pasted image 20240210153419.png",
-    "Pasted image 20240210153328.png",
     "Kubernetes.md",
     "Encryption & Hashing.md",
     "The OSI Model.md",
