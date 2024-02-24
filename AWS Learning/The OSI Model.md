@@ -68,11 +68,11 @@ The Transport layer is responsible for end-to-end communication between hosts an
 5. **Multiplexing and Demultiplexing**: Layer 4 protocols use port numbers to multiplex multiple communication streams onto a single network connection and demultiplex incoming data to the appropriate application or process running on the host. This enables concurrent communication between multiple applications on the same host.
     
 
-### Layer 5: Session Layer
+#### Layer 5: Session Layer
 
 The Session layer establishes, maintains, and terminates communication sessions between applications. It handles session synchronization, checkpointing, and recovery mechanisms. While the OSI model includes this layer, many modern networking implementations merge its functionality into the Transport layer (Layer 4) or the Application layer (Layer 7).
 
-#### Why we need Layer 5:
+##### Why we need Layer 5:
 
 1. **Session Establishment**: The Session layer facilitates the establishment of communication sessions between applications by handling authentication, authorization, and session setup procedures. This ensures that the participating entities are authenticated and authorized to communicate with each other.
     

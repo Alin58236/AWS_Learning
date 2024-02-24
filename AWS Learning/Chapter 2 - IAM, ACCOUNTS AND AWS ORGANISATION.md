@@ -19,7 +19,6 @@
 	- **Managed policies can be either ****"AWS MANAGED"** (existing template policies such as ***ChangePasswordAfterLogIn***), or **"Customer Managed"** (created by users with CloudFormation)
 	- **INLINE POLICIES should be used for custom, exceptional policies for identities**
 	
-	
 - ## IAM Users and ARNs
 	- ARNs (Amazon Resource Names) are used to uniquely identify any AWS resource within an AWS Account
 	- The ARN format is **arn: partition : service : region : account-id:resource-id**
@@ -29,12 +28,10 @@
 	- Can have 5000 IAM users / account
 	- IAM user can be a member of maximum 10 IAM Groups
 	
-	
 - ## Simple Identity Permissions
 	
 	- In the simpleidentitypermissions folder in the git repo, there is a CloudFormation YAML file that contains an IAM account and multiple resources. One of the resource is a policy. NOTE that the policy is just created, not automatically applied to the IAM user
 	- That is created as a managed policy, and has to be set to the IAM user by the admin!
-	
 	
 - ## IAM Groups
 	
@@ -76,6 +73,19 @@
 	-  Generates temporary credentials whenever a role is assumed
 	- Similar to access keys
 	- **The credentials expire and do not belong to the user**
+	- Used to access AWS resources
+	- Requested by an Identity (AWS or EXTERNAL)
+	- ![[Pasted image 20240225003309.png]]
+
+- ## AWS Organizations
+	
+	- An AWS Product that allows the management of multiple AWS Accounts
+	- It all stats with an AWS Account *(called the standard account)*. It creates the org *(NOTE: the org is not created inside the account, but it is used to create the organisation)*, and becomes the management account of the org. using this management account you can invite another accounts in the organisation. When standard AWS accounts join an org, they become *member accounts*. 
+	- The individual payment methods of the org members are now nulled, and a consolidated billing method is created.
+	- New accounts can be created directly within the org.
+	- Allows Role Switching (login in account1 and assume the identity of account2 - simplifies account switching)
+
+- ## Service Control Policies
 	- 
 
 

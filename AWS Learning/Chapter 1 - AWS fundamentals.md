@@ -101,7 +101,7 @@ AWS has public services as well as private services (depending on the IP address
 
 	- 
 
- - ## CloudFormation (CFN) Basics
+- ## CloudFormation (CFN) Basics
 	
 	 - Service for **resource management**
 	 - uses CloudFormation **Templates** to create and delete resources (**YAML or JSON**)
