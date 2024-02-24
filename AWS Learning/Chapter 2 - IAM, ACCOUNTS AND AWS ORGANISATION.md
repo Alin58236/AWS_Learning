@@ -45,9 +45,38 @@
 	- Soft limit of 300 groups per account
 	- Groups are not a true identity. They can't be referenced as a principal in a policy
 
+- ## IAM Roles
+	
+	- Roles are a security and **identity mechanism** that provides 2 features:
+		- 1. ***Trust policy*** (who can assume that role)
+		- 2. ***Permissions policy*** (what does that role allow a user to do)
+	- Roles are not given. They are assumed by the user
+	- Roles offer ***temporary credentials generated*** by an AWS Service called ***STS (Secure Token Service)***
+	- Once a user assumes a role, he becomes that role and receives it's permissions
+	
+	 #### When to use IAM Roles?
+	
+	- for lambdas (Lambda Execution Role)
+	- when we don't know the number of principals (more or undetermined)
+	- emergency/out of the usual situation
+	- When adding AWS into an existing corporate environment (for SSO or if users > 5000) - we can't use Google, Facebook directly in AWS
+	- Cross-Account Access
+	
+	 #### Service Linked Roles
+	
+	- A ***service linked role*** is an ***IAM Role linked to a specific service***
+	- Predefined by a service
+	- Provide permissions that a service needs in order to be able to interact with other AWS services on ***a user's behalf***
+	- Service might ***create/delete the role***
+	- **You can't delete the role until it's no longer required**
+	- *If we want to give a user the capability to add a service linked role to a service that he works with, but not create or edit roles , we would need to give that user what is called a* **"PassRole"** *permission*
 
-
-
+- ## AWS Security Token Service (STS)
+	
+	-  Generates temporary credentials whenever a role is assumed
+	- Similar to access keys
+	- **The credentials expire and do not belong to the user**
+	- 
 
 
 
