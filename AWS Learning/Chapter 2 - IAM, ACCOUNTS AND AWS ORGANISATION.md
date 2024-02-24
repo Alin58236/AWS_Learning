@@ -80,13 +80,19 @@
 - ## AWS Organizations
 	
 	- An AWS Product that allows the management of multiple AWS Accounts
-	- It all stats with an AWS Account *(called the standard account)*. It creates the org *(NOTE: the org is not created inside the account, but it is used to create the organisation)*, and becomes the management account of the org. using this management account you can invite another accounts in the organisation. When standard AWS accounts join an org, they become *member accounts*. 
+	- It all stats with an AWS Account *(called the standard account)*. It creates the org *(NOTE: the org is not created inside the account, but it is used to create the organisation)*, and becomes the management account of the org. Using this management account you can invite another accounts in the organisation. When standard AWS accounts join an org, they become *member accounts*. However, they are not part of Organizational units, but by default, they are part of the root container with the management account.
 	- The individual payment methods of the org members are now nulled, and a consolidated billing method is created.
 	- New accounts can be created directly within the org.
 	- Allows Role Switching (login in account1 and assume the identity of account2 - simplifies account switching)
 
-- ## Service Control Policies
-	- 
+- ## Service Control Policies (SCPs)
+	- Are applied top-down ***(e.g. if a policy is applied to an org unit, it will be applied to all members of that unit)***
+	- The management account can't be restricted using service control policies!
+	- SCPs are account permissions boundaries
+	- They limit what the account (including the account root user) can do
+	- **They don't grant permissions, just define limits.** You still have to give identities permissions.
+	- Can be used with **Allow List** or **Deny List**
+	- If an Identity permission is present, the same permission scope must be specified in a SCP in order for the access to be granted
 
 
 
