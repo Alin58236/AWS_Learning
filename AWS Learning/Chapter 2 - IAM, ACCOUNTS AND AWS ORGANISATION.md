@@ -94,15 +94,35 @@
 	- Can be used with **Allow List** or **Deny List**
 	- If an Identity permission is present, the same permission scope must be specified in a SCP in order for the access to be granted
 
-- ## 
+- ## CloudWatch Logs
+	
+	- **Public service** (usable from AWS or on-premises)
+	- **Store**, **monitor** and **access** logging data
+	- **AWS Integrations - EC2, VPC Flow Logs, Lambda, CloudTrail, R53...**
+	- Can generate metrics based on logs - **metric filter**
+	
+	- *Logging structure and architecture*![[Pasted image 20240225210116.png]]
+
+- ## CloudTrail
+	
+	- Product that logs API Actions as a **CloudTrail Event**
+	- Stores the last 90 days
+	- To customize the service, we have to create a *Trail*
+	- **Management Events and Data Events**
+	
+	- A trail can be created using **ONE REGION**, or **ALL REGIONS**
+	- The logs can be stored in a targeted S3 bucket
+	- **Enabled By Default**, with **no S3 Storage** for Logs
+	- **Management Events ONLY** by default
+	- Can be integrated with CloudWatch Logs
+	- We can create organizational trails (stores all event of all the accounts in the org)
+	- **IAM, STS, CloudFront -> Global Service Events that are stored in the region us-east-1** -> a trail must be enabled to capture that data
+	- **It is not REALTIME**
 
 
 
 
 
-
-
-
-
+# Next Chapter : [[Chapter 3 - Simple Storage Service (S3)]]
 
 #AWS_Learning 
