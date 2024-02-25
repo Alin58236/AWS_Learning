@@ -6,7 +6,7 @@
       {
         "id": "52a7f033b7623eab",
         "type": "tabs",
-        "dimension": 77.6282590412111,
+        "dimension": 77.62825904121111,
         "children": [
           {
             "id": "281af5ff9cb7ccab",
@@ -105,6 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,6 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +144,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md"
+              }
             }
           }
         ]
