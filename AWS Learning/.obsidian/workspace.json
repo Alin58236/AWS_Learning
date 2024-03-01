@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md"
+                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md"
               }
             }
           }
@@ -168,8 +168,8 @@
   },
   "active": "281af5ff9cb7ccab",
   "lastOpenFiles": [
-    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
     "Chapter 3 - Simple Storage Service (S3).md",
+    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
     "Pasted image 20240225210116.png",
     "The OSI Model.md",
     "SSL & TLS.md",
