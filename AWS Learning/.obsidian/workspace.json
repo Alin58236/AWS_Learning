@@ -6,6 +6,26 @@
       {
         "id": "1cab6c308eefe232",
         "type": "tabs",
+        "dimension": 80.6472081218274,
+        "children": [
+          {
+            "id": "a8ee7ddcf7c281bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "902425bdce57f374",
+        "type": "tabs",
+        "dimension": 19.35279187817259,
         "children": [
           {
             "id": "bbeb7473647409c9",
@@ -67,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f7b3c7dc6a461d9e",
@@ -84,6 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Chapter 3 - Simple Storage Service (S3).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Chapter 3 - Simple Storage Service (S3).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +142,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Chapter 3 - Simple Storage Service (S3).md"
+              }
             }
           }
         ]
@@ -141,13 +164,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bbeb7473647409c9",
+  "active": "a8ee7ddcf7c281bf",
   "lastOpenFiles": [
+    "img/Pasted image 20240210153328.png",
     "Chapter 3 - Simple Storage Service (S3).md",
-    "Screenshot 2024-03-05 at 01.44.19.png",
-    "Pasted image 20240302194517.png",
+    "Untitled",
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
-    "Pasted image 20240225210116.png",
+    "img/Screenshot 2024-03-05 at 01.44.19.png",
+    "img/Pasted image 20240302194517.png",
+    "img/Pasted image 20240225210116.png",
     "The OSI Model.md",
     "SSL & TLS.md",
     "Network Address Translation (NAT).md",
@@ -155,13 +180,13 @@
     "Networking Basics.md",
     "AWS - AWS Learning.md",
     "Chapter 1 - AWS fundamentals.md",
-    "Pasted image 20240225003309.png",
-    "Pasted image 20240225003125.png",
-    "Pasted image 20240223201528.png",
-    "Pasted image 20240223181911.png",
-    "Pasted image 20240222011410.png",
-    "Pasted image 20240221014356.png",
-    "Pasted image 20240221014157.png",
+    "img/Pasted image 20240225003309.png",
+    "img/Pasted image 20240225003125.png",
+    "img/Pasted image 20240223201528.png",
+    "img/Pasted image 20240223181911.png",
+    "img/Pasted image 20240222011410.png",
+    "img/Pasted image 20240221014356.png",
+    "img/Pasted image 20240221014157.png",
     "Digital Signatures.md",
     "Elastic Compute Cloud (EC2) Basics.md",
     "Kubernetes.md",
