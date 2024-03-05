@@ -4,29 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "52a7f033b7623eab",
-        "type": "tabs",
-        "dimension": 77.11171662125341,
-        "children": [
-          {
-            "id": "281af5ff9cb7ccab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "1cab6c308eefe232",
         "type": "tabs",
-        "dimension": 22.888283378746593,
         "children": [
           {
             "id": "bbeb7473647409c9",
@@ -105,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md"
-              }
+              "state": {}
             }
           }
         ]
@@ -166,11 +141,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "281af5ff9cb7ccab",
+  "active": "bbeb7473647409c9",
   "lastOpenFiles": [
+    "Chapter 3 - Simple Storage Service (S3).md",
+    "Screenshot 2024-03-05 at 01.44.19.png",
     "Pasted image 20240302194517.png",
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
-    "Chapter 3 - Simple Storage Service (S3).md",
     "Pasted image 20240225210116.png",
     "The OSI Model.md",
     "SSL & TLS.md",
@@ -186,8 +162,6 @@
     "Pasted image 20240222011410.png",
     "Pasted image 20240221014356.png",
     "Pasted image 20240221014157.png",
-    "Pasted image 20240221013829.png",
-    "Pasted image 20240220221916.png",
     "Digital Signatures.md",
     "Elastic Compute Cloud (EC2) Basics.md",
     "Kubernetes.md",
