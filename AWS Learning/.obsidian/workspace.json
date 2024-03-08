@@ -12,11 +12,9 @@
             "id": "a8ee7ddcf7c281bf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
-                "mode": "source",
-                "source": false
+                "file": "img/Screenshot 2024-03-08 at 15.51.21.png"
               }
             }
           }
@@ -103,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "file": "img/Screenshot 2024-03-08 at 15.51.21.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "file": "img/Screenshot 2024-03-08 at 15.51.21.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md"
+                "file": "img/Screenshot 2024-03-08 at 15.51.21.png"
               }
             }
           }
@@ -164,13 +162,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a8ee7ddcf7c281bf",
+  "active": "dc2b812c6a132a57",
   "lastOpenFiles": [
-    "Screenshot 2024-03-08 at 17.02.00.png",
-    "Screenshot 2024-03-08 at 16.59.48 1.png",
-    "Screenshot 2024-03-08 at 16.59.48.png",
     "Chapter 3 - Simple Storage Service (S3).md",
-    "Screenshot 2024-03-08 at 15.51.21.png",
+    "img/Screenshot 2024-03-08 at 17.02.00.png",
+    "img/Screenshot 2024-03-08 at 16.59.48 1.png",
+    "img/Screenshot 2024-03-08 at 16.59.48.png",
+    "img/Screenshot 2024-03-08 at 15.51.21.png",
     "img/Screenshot 2024-03-08 at 15.48.56.png",
     "img/Screenshot 2024-03-08 at 15.39.11.png",
     "img/Screenshot 2024-03-08 at 15.26.28.png",
@@ -179,7 +177,6 @@
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
     "img/Screenshot 2024-03-05 at 01.44.19.png",
     "img/Pasted image 20240302194517.png",
-    "img/Pasted image 20240225210116.png",
     "The OSI Model.md",
     "SSL & TLS.md",
     "Network Address Translation (NAT).md",
