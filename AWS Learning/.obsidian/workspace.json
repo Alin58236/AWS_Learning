@@ -6,7 +6,7 @@
       {
         "id": "1cab6c308eefe232",
         "type": "tabs",
-        "dimension": 80.6472081218274,
+        "dimension": 78.54671280276817,
         "children": [
           {
             "id": "a8ee7ddcf7c281bf",
@@ -25,7 +25,7 @@
       {
         "id": "902425bdce57f374",
         "type": "tabs",
-        "dimension": 19.35279187817259,
+        "dimension": 21.453287197231834,
         "children": [
           {
             "id": "bbeb7473647409c9",
@@ -87,7 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 311.5
   },
   "right": {
     "id": "f7b3c7dc6a461d9e",
@@ -166,8 +166,15 @@
   },
   "active": "a8ee7ddcf7c281bf",
   "lastOpenFiles": [
-    "img/Pasted image 20240210153328.png",
+    "Screenshot 2024-03-08 at 17.02.00.png",
+    "Screenshot 2024-03-08 at 16.59.48 1.png",
+    "Screenshot 2024-03-08 at 16.59.48.png",
     "Chapter 3 - Simple Storage Service (S3).md",
+    "Screenshot 2024-03-08 at 15.51.21.png",
+    "img/Screenshot 2024-03-08 at 15.48.56.png",
+    "img/Screenshot 2024-03-08 at 15.39.11.png",
+    "img/Screenshot 2024-03-08 at 15.26.28.png",
+    "img/Pasted image 20240210153328.png",
     "Untitled",
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
     "img/Screenshot 2024-03-05 at 01.44.19.png",
@@ -180,13 +187,6 @@
     "Networking Basics.md",
     "AWS - AWS Learning.md",
     "Chapter 1 - AWS fundamentals.md",
-    "img/Pasted image 20240225003309.png",
-    "img/Pasted image 20240225003125.png",
-    "img/Pasted image 20240223201528.png",
-    "img/Pasted image 20240223181911.png",
-    "img/Pasted image 20240222011410.png",
-    "img/Pasted image 20240221014356.png",
-    "img/Pasted image 20240221014157.png",
     "Digital Signatures.md",
     "Elastic Compute Cloud (EC2) Basics.md",
     "Kubernetes.md",

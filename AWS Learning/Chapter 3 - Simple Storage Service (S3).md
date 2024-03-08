@@ -10,7 +10,7 @@
 		- Resource policies **have a specific field** (Principal: "*")
 		- Bucket policies have conditions (through the Condition field)
 			- ![[Pasted image 20240302194517.png]]***e.g. Allow access to bucket to all principals except the IP Address 1.3.3.7/32***
-			
+		
 	- ### Access Control Lists (ACLs)
 		- ACLs can be put on objects and bucket
 		- Legacy stuff, not recommended by AWS
@@ -128,5 +128,74 @@
 	- Better use **IAM Policies**
 	- Supports **Grants**
 
-- ## CSE/SSE Object Encryption
+- ## Object Encryption
+	
+	**Buckets are not encrypted! Objects are!!!**
+	
+	- ### Client Side Encryption (CSE)
+		
+		- data is encrypted before it's sent to the server
+		- The user is responsible for recording which key is used for each object
+		- The user controls the keys, process and tooling for encryption
+		
+	- ### Server Side Encryption (SSE)
+		
+		- The data is transmitted as plaintext.
+		- Once it has arrived at the s3 endpoint, it is encrypted and stored into S3
+		
+		- #### Three types of SSE:
+			1. **SSE-C (Server Side Encryption with customer provided keys)**
+				
+				- *The Object is sent as plaintext together with a key but it's encrypted in transit by the https, so the data is not visible.*
+				- *In order to decrypt, we need to provide a request and the key (which will be discarded after decryption*
+				- **Good for Heavy Regulation Environments**
+				- ***Save on CPU compared to CSE (The encryption and decryption is done server-side)***
+				- ![[Screenshot 2024-03-08 at 15.26.28.png]]
+			
+			2. **SSE-S3 (Server Side Encryption with AWS S3 Provided Keys) - *default***
+				
+				- AWS Handles both the encryption processes as well as the key generation
+				- When we upload an object, AWS generates a key just for that object (per object key), and encrypts the object before storing it
+				- Another key called an S3 key (invisible to the customer) is created, and it is used to encrypt the per object keys
+				- **We are left with an cipher object and a cipher key** *(AES256)*
+				- **Very Little Control (no access or rotation control of the keys)**
+				- ![[Screenshot 2024-03-08 at 15.39.11.png]]
+				
+			3. **SSE-KMS (Server Side Encryption with KMS Keys stored in KMS Key Management Service)**
+				
+				- The power of this method comes from creating a **Customer Managed KMS Key** - managed by you and supports separated permissions
+				- When we want to store an object into S3, the S3 Service makes a request to the existing KMS key and a Data Encryption Key is created
+				- The DEKs are in 2 versions ( **one plain text and one cipher text**)
+				- After the object is encrypted using the plain text key, it is discarded and only the cipher text key is stored with the object. (same architecture like per object keys, but these can be managed)
+				- Provides control over KMS usage, rotation, logging, audit and **Role Separation**
+				- **With No Access to KMS a person can't decrypt the encrypted key -> No decryption of the data**
+				- ![[Screenshot 2024-03-08 at 15.48.56.png]]
+				
+	 ![[Screenshot 2024-03-08 at 15.51.21.png]]
+
+- ## S3 Bucket Keys
+	
+	- In a scenario where **no Bucket keys** are used, **for every Object** that we want to store in S3 with encryption, we need a unique DEK (Data Encryption Key). ***Each DEK means an API Call to the KMS (take the kms key and generate the DEK)***.
+	- Using a single KMS Key limits the number of PUTS that can be done to store encrypted objects / second / key
+	- ![[Screenshot 2024-03-08 at 16.59.48.png]]
+	
+	
+	- If we use ***The Bucket Keys***, the KMS Key is used to create a **time limited S3 Bucket Key** *(which will be used further to generate DEKs)* -> Offloads the work from KMS to S3 and improves scalability
+	- ![[Screenshot 2024-03-08 at 17.02.00.png]]
+	
+	
+	- **!!! After enabling Bucket Keys, in the CloudTrail KMS Logs we will se the bucket name, not the objects ---- due to the S3Bucket Key being used to generate the DEKs, not the KMS !!!**
+	- Works with replication
+	- When replicating plaintext to a bucket using bucket keys, the encryption is done at the destination (for more details visit [https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html))
+
+- ## S3 Object Storage Classes
+	
 	- 
+
+
+
+
+
+
+
+
