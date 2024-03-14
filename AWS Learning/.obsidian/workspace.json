@@ -4,35 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "1cab6c308eefe232",
-        "type": "tabs",
-        "dimension": 78.54671280276817,
-        "children": [
-          {
-            "id": "a8ee7ddcf7c281bf",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "img/Screenshot 2024-03-08 at 15.51.21.png"
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "902425bdce57f374",
         "type": "tabs",
-        "dimension": 21.453287197231834,
         "children": [
           {
-            "id": "bbeb7473647409c9",
+            "id": "50b5cc79d1cc7c70",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "graph",
-              "state": {},
-              "pinned": true
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -101,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "img/Screenshot 2024-03-08 at 15.51.21.png",
+                "file": "Chapter 3 - Simple Storage Service (S3).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "img/Screenshot 2024-03-08 at 15.51.21.png",
+                "file": "Chapter 3 - Simple Storage Service (S3).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "img/Screenshot 2024-03-08 at 15.51.21.png"
+                "file": "Chapter 3 - Simple Storage Service (S3).md"
               }
             }
           }
@@ -164,23 +148,24 @@
   },
   "active": "dc2b812c6a132a57",
   "lastOpenFiles": [
+    "img/Screenshot 2024-03-15 at 01.09.33.png",
+    "img/Screenshot 2024-03-15 at 01.04.48.png",
+    "img/Screenshot 2024-03-15 at 00.44.22.png",
+    "img/Screenshot 2024-03-15 at 00.34.41.png",
+    "img/Screenshot 2024-03-15 at 00.32.35.png",
+    "img/Screenshot 2024-03-14 at 23.57.07.png",
+    "img/Screenshot 2024-03-14 at 23.49.09.png",
     "Chapter 3 - Simple Storage Service (S3).md",
-    "img/Screenshot 2024-03-08 at 17.02.00.png",
-    "img/Screenshot 2024-03-08 at 16.59.48 1.png",
-    "img/Screenshot 2024-03-08 at 16.59.48.png",
-    "img/Screenshot 2024-03-08 at 15.51.21.png",
-    "img/Screenshot 2024-03-08 at 15.48.56.png",
-    "img/Screenshot 2024-03-08 at 15.39.11.png",
-    "img/Screenshot 2024-03-08 at 15.26.28.png",
-    "img/Pasted image 20240210153328.png",
+    "img/Screenshot 2024-03-14 at 17.11.27.png",
+    "img/Screenshot 2024-03-14 at 17.08.25.png",
+    "img/Screenshot 2024-03-14 at 16.33.52.png",
+    "img/Screenshot 2024-03-14 at 16.29.55.png",
+    "DNS.md",
     "Untitled",
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
-    "img/Screenshot 2024-03-05 at 01.44.19.png",
-    "img/Pasted image 20240302194517.png",
     "The OSI Model.md",
     "SSL & TLS.md",
     "Network Address Translation (NAT).md",
-    "DNS.md",
     "Networking Basics.md",
     "AWS - AWS Learning.md",
     "Chapter 1 - AWS fundamentals.md",

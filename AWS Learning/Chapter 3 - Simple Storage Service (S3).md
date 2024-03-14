@@ -190,7 +190,197 @@
 
 - ## S3 Object Storage Classes
 	
-	- 
+	- The default storage class available is the **S3 Standard** 
+		- *objects are replicated on at least 3 availability zones in the AWS region* - 11 9s durability (99.999999999%)
+		- Replication and Content-MD5 Checksums and Cyclic Redundancy Checks (CRCs) are used to detect and fix any data corruption
+		- **Billed per GB/month for data stored. A $ per GB charge for transfer OUT (IN is free) and a price per 1000 requests. No specific retrieval fee, minimum duration or size.**
+		- data available within milliseconds and can be made publicly available![[Screenshot 2024-03-14 at 16.26.01.png]]
+	
+	- **S3 Standard-IA**
+		- same as S3 Standard but more cost-effective
+		- used for infrequent access
+		- cost per retrieval
+		- minimum duration charge of 30 days - objects can be stored for less, but the minimum billing always applies
+		- minimum capacity charge of 128KB per object
+		- **Should be used for long lived data, which is important but where access is infrequent**![[Screenshot 2024-03-14 at 16.27.21.png]]
+	
+	- **S3 One-Zone-IA**
+		- Same as S3 IA, but data is stored in only one AZ (no replication)
+		- Cheaper
+		- **Used for non-critical data that is replaceable**![[Screenshot 2024-03-14 at 16.27.58.png]]
+		
+	- **S3 Glacier Instant**
+		- Like ***S3 Standard IA*** but :
+			- **cheaper storage**
+			- **more expensive retrieval**
+			- **longer minimum duration**
+		- **For when we need Once per quarter instant access**![[Screenshot 2024-03-14 at 16.28.39.png]]
+		
+	- **S3 Glacier Flexible**
+		- Same as S3 Standard but they are not immediately available
+		- Objects cannot be made public -> requires a retrieval process
+		- Data in Glacier Flexible is retrieved to **S3 Standard IA** temporarily:
+			- *Expedited (1-5 min)*
+			- **Standard(3-5 hours)**
+			- ***bulk (5-12 hours)***
+			- *faster ( more expensive )*
+		- **40KB min size**
+		- *90 day minimum duration*
+		- **for Archival Data where frequent or realtime access isn't needed** ( yearly )![[Screenshot 2024-03-14 at 16.29.25.png]]
+	
+	- **S3 Glacier Deep Archive**
+		- Objects cannot be made publicly accessible
+		- *any access of data ( beyond object metadata ) requires a retrieval process*
+		- Data in **Glacier Deep Archive** is retrieved to **S3 Standard IA** temporarily:
+			- **Standard (12 hrs)**
+			- **bulk (48 hrs)**
+		- **40KB min size**
+		- **180 Days min duration**
+		- **Used for Archival data that rarely if ever needs to be accessed - Legal or Regulation Data Storage**![[Screenshot 2024-03-14 at 16.29.55.png]]
+	
+	- **S3 Intelligent Tiering**
+		- monitors object access and moves it in certain tiers
+		- adds a monitoring and automation cost per 1000 objects
+		   -  ![[Screenshot 2024-03-14 at 16.33.52.png]]
+
+- ## S3 Lifecycle 
+	
+	- A lifecycle is a **set of rules**
+	- **Rules consist of actions on buckets or group of objects**
+	- **Transition Actions**
+	- *Expiration Actions*
+	- **can't trigger actions based on access (S3 Intelligent tiering does that)**
+	- ***S3 One Zone IA cannot Transition to Glacier Instant***! ![[Screenshot 2024-03-14 at 17.11.27.png]]
+	- Transition can only happen down!
+
+- ## S3 Replication
+	- **Cross-Region Replication (CRR)**
+	
+	- **Same-Region Replication (SRR)**
+	
+	- **Same Account Replication**
+		- Needs the Source Bucket and an IAM Role that assumes replication
+		- Both buckets (destination and source) are in the same AWS Account -> they both trust the same AWS Account -> they trust IAM -> they trust the IAM Role
+	
+	- Different Account Replication
+		- the destination bucket (replica) does not trust the source account
+		- a bucket policy needs to be added to the destination account in order for the source account to be trusted
+	
+	**What to replicate?**
+	- ***All objects or subsets***
+	- ***storage class*** (default is to maintain, but we can opt for a cheaper storage class)
+	- ***ownership*** - default is the source account
+	- *Replication Time Control (RTC)* - adds monitoring for which objects are queued for replication
+	
+	**------IMPORTANT------**
+	
+	1. **The replication is not retroactive by default and versioning has to be turned on on both destination and source buckets! If we apply replication to a bucket that already has objects, they will not be replicated
+	2. * **batch replication can be used if there are existing objects **
+	3. **One-way replication (source -> destination), or bi-directional**
+	4. Replication can be done either unencrypted, SSE-S3, SSE-KMS (extra configs) or SSE-C
+	5. Source bucket owner needs PERMISSION to objects
+	6. No System Events are replicated
+	7. No Glacier or Glacier Deep Archive (conceptually separate storage products)
+	8. **No deletes are replicated ( but the deleteMarkerReplication can be added )**
+	
+	**Why use Replication?**
+	1. SRR - Log aggregation
+	2. SRR - Prod and QA environment sync
+	3. SRR - string sovereignty requirements
+	4. CRR - global resilience
+	5. CRR - reduce latency
+
+- ## S3 Presigned URLs
+	
+	- grants an outside user / app temporary access to objects in a private s3
+	- ![[Screenshot 2024-03-14 at 23.49.09.png]]
+	- ![[Screenshot 2024-03-14 at 23.57.07.png]]Creation process
+	- Must specify an object and an expiry date and time!
+	- If a user doesn't have access to an object, the presigned URL created by that user will not have access to that object
+	- Don't generate using an IAM Role -> URL permissions expire when the TempCredentials expire ( the URL could be valid much longer )
+
+- ## S3 Select & Glacier Select
+	
+	- S3 is a very scalable storage
+	- Used mostly for when we need an entire object
+	- But if that object is 5TB, it takes a lot of time and bandwidth
+	- Filtering at the client side is not a solution (consumption already happened)
+	- S3/Glacier Select uses SQL-like syntax for selecting part of the objects, pre-filtered by S3
+	- CSV, JSON, Parquet, BZIP2 compression for CSV and json
+	- 400% faster, 80% cheaper
+
+- ## S3 Cross-Origin Resource Sharing (CORS)
+	
+	- *Mostly used for API Gateways*
+	
+	- CORS Flow![[Screenshot 2024-03-15 at 00.32.35.png]]
+	
+	- CORS Configuration![[Screenshot 2024-03-15 at 00.34.41.png]]
+	- ### Types of requests:
+		- Simple requests
+		- Pre-flight requests (browser first sends a HTTP request to the origin and will determine if the origin is safe)
+		- **Access-Control-Allow-Origin** (contains * or a particular origin)
+		- **Access-Control-Max-Age** ( cache how long can I communicate with the origin before another pre-flight)
+		- **Access-Control-Allow-Methods** (allowed HTTP methods)
+		- **Access-Control-Allow-Headers** (allowed headers)
+
+- ## S3 Events
+	- When enabled, a notification is generated when a certain thing happens in an S3
+	- Can be delivered to SQS, SNS, and Lambda Functions
+	- Object created notifications (Put, Post, Copy, CompleteMultiPartUpload)
+	- Object Delete (*, Delete, DeleteMarkerCreated)
+	- Object Restore ( Post-initiated, completed)
+	- Replication ( OperationMissedThreshold, OperationReplacedAfterThreshold, OperationNotTracked, OperationFailedReplication )
+	- Must allow services (SQS,SNS,Lambda) to communicate to S3
+	- ![[Screenshot 2024-03-15 at 00.44.22.png]]
+	- EventBridge is an alternative!
+
+- ## S3 Access Logs
+	 -   ![[Screenshot 2024-03-15 at 01.04.48.png]]
+
+- ## S3 Requester Pays
+	 -  ![[Screenshot 2024-03-15 at 01.09.33.png]]
+
+- ## S3 Object Lock
+	
+	- it is a group of related features- enabled on 'new' buckets (support required for existing)
+	- Write-once-read-many - no delete, no overwrite
+	- Requires versioning - individual versions are locked
+	- 1. retention periods (days / years)
+	- 2. legal holds
+	- Both, One, none
+	- A Bucket can have default Object Lock settings
+	
+	- Retention Period Modes:
+		1. **Compliance** - Can't be adjusted, delete, overwritten (on objects or locks) **even by the account root user**, until retention expires
+		2. **Governance** - special permissions can be granted allowing lock settings to be adjusted
+			1. *s3:BypassGovernanceRetention*
+			2. *x-amz-bypass-governance-retention:true*
+	
+	- Legal Hold:
+		- **On or Off**
+		- no retention
+		- **NO DELETES or Changes until removed**
+		- *s3:PutObjectLegalHold*
+		- Prevent accidental deletion of critical object versions
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
