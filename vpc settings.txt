@@ -1,0 +1,5 @@
+Setari vpc in AWS
+
+Nume = 58236vpc
+Vpc id = vpc-0e21b4d8f5588fb38
+

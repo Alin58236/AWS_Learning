@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "tag:#networking",
@@ -46,6 +46,6 @@
   "repelStrength": 12.8125,
   "linkStrength": 1,
   "linkDistance": 192,
-  "scale": 0.274637915029238,
+  "scale": 0.45690471251800086,
   "close": true
 }

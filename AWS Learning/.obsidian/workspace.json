@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "file": "Chapter 5 - Virtual Private Cloud (VPCs).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "file": "Chapter 5 - Virtual Private Cloud (VPCs).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md",
+                "file": "Chapter 5 - Virtual Private Cloud (VPCs).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 3 - Simple Storage Service (S3).md"
+                "file": "Chapter 5 - Virtual Private Cloud (VPCs).md"
               }
             }
           }
@@ -146,23 +146,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dc2b812c6a132a57",
+  "active": "50b5cc79d1cc7c70",
   "lastOpenFiles": [
+    "img/Screenshot 2024-03-22 at 00.21.38.png",
+    "img/Screenshot 2024-03-20 at 16.45.18.png",
+    "Chapter 5 - Virtual Private Cloud (VPCs).md",
+    "img/Screenshot 2024-03-16 at 13.46.39.png",
+    "img/Screenshot 2024-03-16 at 13.35.48.png",
+    "img/Screenshot 2024-03-16 at 13.30.51.png",
+    "img/Screenshot 2024-03-16 at 13.28.21.png",
+    "Chapter 4 - Security.md",
+    "img/Screenshot 2024-03-15 at 21.45.29.png",
+    "img/Screenshot 2024-03-15 at 21.42.10 1.png",
+    "img/Screenshot 2024-03-15 at 21.42.10.png",
+    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
+    "Chapter 3 - Simple Storage Service (S3).md",
     "img/Screenshot 2024-03-15 at 01.09.33.png",
     "img/Screenshot 2024-03-15 at 01.04.48.png",
-    "img/Screenshot 2024-03-15 at 00.44.22.png",
-    "img/Screenshot 2024-03-15 at 00.34.41.png",
-    "img/Screenshot 2024-03-15 at 00.32.35.png",
-    "img/Screenshot 2024-03-14 at 23.57.07.png",
-    "img/Screenshot 2024-03-14 at 23.49.09.png",
-    "Chapter 3 - Simple Storage Service (S3).md",
-    "img/Screenshot 2024-03-14 at 17.11.27.png",
-    "img/Screenshot 2024-03-14 at 17.08.25.png",
-    "img/Screenshot 2024-03-14 at 16.33.52.png",
-    "img/Screenshot 2024-03-14 at 16.29.55.png",
     "DNS.md",
     "Untitled",
-    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
     "The OSI Model.md",
     "SSL & TLS.md",
     "Network Address Translation (NAT).md",
