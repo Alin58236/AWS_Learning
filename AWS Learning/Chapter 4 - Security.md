@@ -15,9 +15,9 @@
 ## CloudHSM
 
 - product similar to KMS - Key management
-- The KMS product acually runs a HSM (Hardware security module), and an HSM can also be run on premise
+- The KMS product actually runs a HSM (Hardware security module), and an HSM can also be run on premise
 - **KMS is a shared service, but separated, while HSM is a true "single tenant" HSM that is AWS provisioned, but fully customer managed**
-- **As a security standard, HSM is Fully FIPs 140-2 Level 3 (KMS is L2, some L3)**
+- **As a security standard, HSM is Fully FIPs 140-2 L3 (KMS is L2, some L3)**
 - We access HSM using industry standard APIs like :
 	- **PCKS** #11
 	- Java Cryptography Extensions (**JCE**)

@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "902425bdce57f374",
+        "id": "bb8fd35e2f1fe4bd",
         "type": "tabs",
         "children": [
           {
@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 5 - Virtual Private Cloud (VPCs).md",
+                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 5 - Virtual Private Cloud (VPCs).md",
+                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 5 - Virtual Private Cloud (VPCs).md",
+                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 5 - Virtual Private Cloud (VPCs).md"
+                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md"
               }
             }
           }
@@ -146,31 +146,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "50b5cc79d1cc7c70",
+  "active": "dc2b812c6a132a57",
   "lastOpenFiles": [
+    "img/Screenshot 2024-03-27 at 18.27.26.png",
+    "img/Screenshot 2024-03-27 at 15.44.51.png",
+    "img/Screenshot 2024-03-27 at 15.35.43.png",
+    "img/Screenshot 2024-03-27 at 15.28.01.png",
+    "Chapter 5 - Virtual Private Cloud (VPCs).md",
+    "Chapter 4 - Security.md",
+    "Chapter 6 - Elastic Compute Cloud (EC2).md",
+    "Chapter 1 - AWS fundamentals.md",
+    "Chapter 3 - Simple Storage Service (S3).md",
+    "img/Screenshot 2024-03-26 at 16.19.40.png",
+    "img/Screenshot 2024-03-26 at 16.12.41.png",
+    "img/Screenshot 2024-03-26 at 15.54.13.png",
+    "Network Address Translation (NAT).md",
     "img/Screenshot 2024-03-22 at 00.21.38.png",
     "img/Screenshot 2024-03-20 at 16.45.18.png",
-    "Chapter 5 - Virtual Private Cloud (VPCs).md",
     "img/Screenshot 2024-03-16 at 13.46.39.png",
     "img/Screenshot 2024-03-16 at 13.35.48.png",
-    "img/Screenshot 2024-03-16 at 13.30.51.png",
-    "img/Screenshot 2024-03-16 at 13.28.21.png",
-    "Chapter 4 - Security.md",
-    "img/Screenshot 2024-03-15 at 21.45.29.png",
-    "img/Screenshot 2024-03-15 at 21.42.10 1.png",
-    "img/Screenshot 2024-03-15 at 21.42.10.png",
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
-    "Chapter 3 - Simple Storage Service (S3).md",
-    "img/Screenshot 2024-03-15 at 01.09.33.png",
-    "img/Screenshot 2024-03-15 at 01.04.48.png",
     "DNS.md",
     "Untitled",
     "The OSI Model.md",
     "SSL & TLS.md",
-    "Network Address Translation (NAT).md",
     "Networking Basics.md",
     "AWS - AWS Learning.md",
-    "Chapter 1 - AWS fundamentals.md",
     "Digital Signatures.md",
     "Elastic Compute Cloud (EC2) Basics.md",
     "Kubernetes.md",
