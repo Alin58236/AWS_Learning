@@ -64,19 +64,6 @@
 For more details : https://instances.vantage.sh/
 
 ## NOTE! Connection through SSH vs EC2 Instance Connect
-
-- The EC2 instance connect happens through browser, from an AWS Account and the connection is NOT actually coming from your IP 0.0.0.0/0, but it is forwarded so that the source IP address will be an AWS specific IP (we need to add this IP to the security group in order to use EC2 Instance Connect) - it doesn't really make sense because the browser is on your local machine, but actually the connection source IP is not your IP due to forwarding
-
-- The SSH Connect is performed on your local machine (0.0.0.0/0) so in order to access the EC2 instance through SSH using the terminal, we need to add 0.0.0.0/0 to the Security Group.
-
-
-
-
-
-
-
-
-
 ## Storage
 
 #### There are different types of storage:
@@ -170,4 +157,29 @@ Architecture:![[Screenshot 2024-03-27 at 15.28.01.png]]
 	- **Highest storage performance in AWS**
 	- ***Included in instance price!!!***
 	- ***Attached at launched***
-	- ![[Screenshot 2024-03-27 at 18.27.26.png]]
+	- ![[Screenshot 2024-03-27 at 18.27.26 1.png]]
+	- Instance Store perform at much higher throughput
+	- **Can only be attached at launch**
+
+
+### EBS vs Instance Store
+
+- *Persistence* -> ***EBS*** (instance store is lost when rebooting or migrating to other host)
+- Resilience -> ***EBS***
+- Isolation from instance lifecycle -> ***EBS***
+- *Resilience* with an app that has built-in replication -> ***Instance store***
+- High-Performance -> it depends but usually*** Instance Store***
+- Cost -> ***Instance Store*** (it's included with the EC2)
+
+- ![[Screenshot 2024-03-27 at 19.32.07.png]]
+
+## Snapshots
+
+- incremental volume copies to S3
+- the first is a full copy of 'data' on the volume
+- future snapshots are incremental
+- volumes can be created or restored from snapshots
+- can be used for migrations to other AZs/Regions
+- ![[Screenshot 2024-03-27 at 19.43.21.png]]
+
+- Snapshots restore gradually 
