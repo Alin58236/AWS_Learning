@@ -182,4 +182,12 @@ Architecture:![[Screenshot 2024-03-27 at 15.28.01.png]]
 - can be used for migrations to other AZs/Regions
 - ![[Screenshot 2024-03-27 at 19.43.21.png]]
 
-- Snapshots restore gradually 
+- Snapshots restore **gradually** 
+
+### !!! DEMO Lesson
+- when creating an instance and an ebs volume, the volume is not attached to the instance, we must attach it manually.
+- after attaching the ebs volume to the instance, we must create a file system on that volume in order to make it usable
+- to access the filesystem we must mount it on the folder that we manually create
+- after closing the instance, the filesystem is unmounted
+- to mount it automatically at startup, the volume UUID must be set in the fstab config file
+- SNAPSHOTS cannot only be used to transfer volumes from one AZ to another, but we can also copy them to different regions

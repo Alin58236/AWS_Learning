@@ -6,9 +6,10 @@
       {
         "id": "bb8fd35e2f1fe4bd",
         "type": "tabs",
+        "dimension": 78.20069204152249,
         "children": [
           {
-            "id": "50b5cc79d1cc7c70",
+            "id": "cf5a9afd2f91d457",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -17,6 +18,21 @@
                 "mode": "source",
                 "source": false
               }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a2472ec136c095aa",
+        "type": "tabs",
+        "dimension": 21.79930795847751,
+        "children": [
+          {
+            "id": "50b5cc79d1cc7c70",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +101,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +117,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +138,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,6 +160,7 @@
   },
   "active": "50b5cc79d1cc7c70",
   "lastOpenFiles": [
+    "Chapter 6 - Elastic Compute Cloud (EC2).md",
     "Screenshot 2024-03-27 at 19.43.21.png",
     "img/Screenshot 2024-03-27 at 19.32.07.png",
     "img/Screenshot 2024-03-27 at 18.27.26 1.png",
@@ -157,14 +170,12 @@
     "img/Screenshot 2024-03-27 at 15.28.01.png",
     "Chapter 5 - Virtual Private Cloud (VPCs).md",
     "Chapter 4 - Security.md",
-    "Chapter 6 - Elastic Compute Cloud (EC2).md",
     "Chapter 1 - AWS fundamentals.md",
     "Chapter 3 - Simple Storage Service (S3).md",
     "img/Screenshot 2024-03-26 at 16.19.40.png",
     "img/Screenshot 2024-03-26 at 16.12.41.png",
     "img/Screenshot 2024-03-26 at 15.54.13.png",
     "Network Address Translation (NAT).md",
-    "img/Screenshot 2024-03-22 at 00.21.38.png",
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
     "DNS.md",
     "Untitled",
