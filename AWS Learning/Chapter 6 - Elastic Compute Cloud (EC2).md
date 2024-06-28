@@ -191,3 +191,98 @@ Architecture:![[Screenshot 2024-03-27 at 15.28.01.png]]
 - after closing the instance, the filesystem is unmounted
 - to mount it automatically at startup, the volume UUID must be set in the fstab config file
 - SNAPSHOTS cannot only be used to transfer volumes from one AZ to another, but we can also copy them to different regions
+
+
+## EBS Encryption
+
+- Heavily dependent on KMS
+- Needs a KMS key
+- When an Encrypted volume is created, the KMS Service creates a DEK (*Data Encryption Key*) for that volume only
+- It is created using the "**GenerateDataKey WithoutPlainText**" API call
+- the encrypted key is stored on the EBS volume
+- the plain text key is only loaded in the memory of the EC2 Host to be used for data encryption by the EC2 instance
+- When the data is sent to be stored in the EBS, a KMS call is first performed to get the plaintext key for the data. Then the data is encrypted and sent as cypher text to the EBS volume.
+- When an EC2 instance is terminated, or when it changes hosts, the keys are discarded
+- For that instance to use the volume again, the instance needs to decrypt the DEK and store the plaintext version in memory of another EC2 host.
+- If a snapshot is created, it uses the same keys and 
+- **NO COSTS - should be used by default**
+- Accounts can be set to encrypt by default - **default KMS Key**
+- Otherwise **choose a KMS Key** to use
+- **EACH VOLUME USES 1 UNIQUE DEK**
+- **CANNOT REMOVE ENCRYPTION FROM AN ENCRYPTED VOLUME**
+- OS isn't aware of the encryption -> no performance loss on the instance
+
+
+## Network Interfaces, instance IPs and DNS
+
+- An EC2 instance has at least one ENI (Elastic Network Interfaces)
+- We can have multiple ENIs (in different subnets), but the subnets have to be in the same AZ.
+
+Network interfaces have:
+	- a mac address
+	- primary IPv4 private address
+	- 0 or more secondary IPs
+	- 0 or 1 public IPv4 Address
+	- 1 elastic IP per private IPv4 address
+	- 0 or more IPv6 addresses (already publicly routable)
+	- Security Groups
+	- Enable or Disable Source/Destination Checks
+
+*For secondary network interfaces the options are the same as above BUT these can be detached and reattached to another EC2 Instances.*
+
+**If we have a public IPv4 address allocated, inside the VPC it will resolve to the primary private IPv4 address, but if we are outside the VPC, it resolves to the public IP**
+
+**If we enable the elastic IP it removes the public IPv4 address, and it gets replaced with the elastic one!**
+
+Secondary ENI + MAC = **Licensing**
+Multiple interfaces can be used for multi-homed (subnets) Management & Data
+Different Security Groups with different types of access -> multiple interfaces!
+
+
+
+## Amazon Machine Images (AMI)
+
+- Like Docker images but for EC2 instances
+- **AWS or community** provided
+- Regional and with **uniqueID** (e.g ami-786g89fsd7822f)
+- Marketplace (can include commercial software)
+
+**AMI Lifecycle**
+![[Screenshot 2024-04-01 at 17.44.42.png]]
+
+
+
+- AMIs are created in One Region and can be used only in that region
+- AMI Baking -> Creating an AMI from an existing instance + application
+- **An AMI can't be edited** -> launch, configure, and create a new one
+- Can be copied between regions (including it's snapshots)
+- By default, an AMI is only available to the owners account
+- An AMI has EBS snapshots and we will be billed for the capacity of those snapshots
+- BEST PRACTICES FOR AMI SHARE: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharing-amis.html
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

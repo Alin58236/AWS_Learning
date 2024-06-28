@@ -108,7 +108,7 @@
 		- *The KMS only creates the DEKs but does not use them for encryption - you do, or the service using the DEK*
 		- **S3 can use KMS to encrypt every single object**
 	
-	     ### How do DEKs Work?
+		 #### How do DEKs Work?
 		
 		1. Creates 2 keys *immediately before* you want to encrypt something : 
 			1. **Plaintext Version**
