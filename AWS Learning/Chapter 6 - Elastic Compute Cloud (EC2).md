@@ -63,7 +63,7 @@
 ![[Screenshot 2024-03-26 at 16.19.40.png]]
 For more details : https://instances.vantage.sh/
 
-## NOTE! Connection through SSH vs EC2 Instance Connect
+### NOTE! Connection through SSH vs EC2 Instance Connect
 ## Storage
 
 #### There are different types of storage:
@@ -73,8 +73,9 @@ For more details : https://instances.vantage.sh/
 4. **Persistent Storage** - IS PERMANENT - outlives the EC2 Instance lifetime
 
 #### Categories of Storage:
-1. **Block Storage** - Volume presented to the OS as a collection of blocks 
-  -  No Structure 
+1. **Block Storage** 
+  - Volume presented to the OS as a collection of blocks 
+  - No Structure 
   - **Mountable, Bootable** 
   - HDD or SSD, or logical volume	
   - most EC2 instances use it as a boot storage
@@ -98,15 +99,25 @@ For more details : https://instances.vantage.sh/
 
 ## Elastic Block Store (EBS)
 
-- **Block Storage** - raw disk allocation (volume) - can be **encrypted** using **KMS**
-- instances see block device and create file system on this device (ext3/4, xfs)
-- Storage is provisioned in **ONE AZ!!!**
-- attached to **one** EC2 instance over a storage network
-- can be **DETACHED** and **REATTACHED**, not lifecycle linked to one instance 
-- If an instance moves from one host to another, the EBS follows.. -> persistent
-- **BACKUP IN S3** to migrate between **AZs**
-- *different storage types, different sizes, different performance profiles*
-- billed on GB/month
+- **Block Storage:** EBS provides raw block-level storage that can be formatted with a filesystem (e.g., ext3, ext4, xfs).
+
+- **Encryption:** EBS volumes can be encrypted using AWS Key Management Service (KMS).
+
+- **File System:** Instances recognize the block device and can create a file system on this device.
+
+- **Single Availability Zone (AZ):** EBS volumes are provisioned in a single AZ. This means they are tied to the specific AZ where they were created.
+
+- **Attachment:** An EBS volume can be attached to a single EC2 instance at a time within the same AZ over a storage network.
+
+- **Detach and Reattach:** EBS volumes can be detached from one instance and reattached to another instance within the same AZ. They are not tied to the lifecycle of an instance.
+
+- **Persistence:** If an instance moves from one host to another (e.g., due to failure or scaling operations), the EBS volume remains attached to the instance, ensuring data persistence.
+
+- **Backups:** EBS snapshots can be taken and stored in Amazon S3, allowing you to migrate data between different AZs or even different regions.
+
+- **Types and Performance:** EBS offers different storage types (e.g., gp2, gp3, io1, io2, st1, sc1), each with distinct sizes and performance profiles to match various workloads.
+
+- **Billing:** EBS is billed based on the provisioned storage size in GB/month and additional charges may apply for IOPS and data transfer depending on the volume type.
 
 Architecture:![[Screenshot 2024-03-27 at 15.28.01.png]]
 
@@ -168,7 +179,7 @@ Architecture:![[Screenshot 2024-03-27 at 15.28.01.png]]
 - Resilience -> ***EBS***
 - Isolation from instance lifecycle -> ***EBS***
 - *Resilience* with an app that has built-in replication -> ***Instance store***
-- High-Performance -> it depends but usually*** Instance Store***
+- High-Performance -> it depends but usually ***Instance Store***
 - Cost -> ***Instance Store*** (it's included with the EC2)
 
 - ![[Screenshot 2024-03-27 at 19.32.07.png]]
@@ -189,5 +200,29 @@ Architecture:![[Screenshot 2024-03-27 at 15.28.01.png]]
 - after attaching the ebs volume to the instance, we must create a file system on that volume in order to make it usable
 - to access the filesystem we must mount it on the folder that we manually create
 - after closing the instance, the filesystem is unmounted
-- to mount it automatically at startup, the volume UUID must be set in the fstab config file
+- to mount it automatically at startup, the volume UUID must be set in the "fstab" config file
 - SNAPSHOTS cannot only be used to transfer volumes from one AZ to another, but we can also copy them to different regions
+
+- **Instance Store Volumes**  (ones attached to the instance by default and on-premise) **persist data over reboots** (*not start and stop, but reboot*).  unless configured to do so!
+- On **START AND STOP** the instance may move to another EC2 Host! In this scenario, the file system might be persisted, but the data is lost :/ 
+
+## EC2 Network and DNS Architecture
+
+From a networking perspective, every EC2 instance that is created receives a network interface (called the primary network interface). Multiple ENIs (elastic network interfaces) can be created for that instance afterwards.
+
+Each network interface has the following characteristics:
+![[Pasted image 20240628011926.png]]
+
+**!!!! When we assign an Elastic IP Address, the previous private IP address is discarded and replaced by the elastic one. When the elastic ip is deactivated, ANOTHER private ip is created!!!!
+
+**!!!! Back in the day, a lot of legacy code was licensed using a MAC address (because it is static). We can use a secondary elastic network interface and it's mac address for licensing, and if we want to move the license to another EC2 instance, we can do that by detaching the ENI from the current ec2 instance, and attach it to another one that will be licensed.
+
+**!!!! Can have multiple ENIs with different security groups ( as SGs are created per ENI)
+
+**!!!! The OS doesn't see the public IPv4 !!! 
+
+**!!!! The public DNS (which is given to the VPC for the public ipv4 address) will resolve to the private IP if accessed from within the VPC, and to the public one if accessed from the internet
+
+
+## EC2 Purchase Options
+
