@@ -4,14 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "bb8fd35e2f1fe4bd",
+        "id": "34987c7ba370cba9",
         "type": "tabs",
+<<<<<<< HEAD
         "dimension": 17.301038062283737,
+=======
+>>>>>>> 68e3432174835f17f7e81c21b1f831bb84351536
         "children": [
           {
-            "id": "cf5a9afd2f91d457",
+            "id": "93c384dadfbd3c02",
             "type": "leaf",
             "state": {
+<<<<<<< HEAD
               "type": "markdown",
               "state": {
                 "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
@@ -37,6 +41,10 @@
                 "mode": "source",
                 "source": false
               }
+=======
+              "type": "empty",
+              "state": {}
+>>>>>>> 68e3432174835f17f7e81c21b1f831bb84351536
             }
           }
         ]
@@ -89,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 311.5
+    "width": 200
   },
   "right": {
     "id": "f7b3c7dc6a461d9e",
@@ -166,12 +174,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "50b5cc79d1cc7c70",
+  "active": "93c384dadfbd3c02",
   "lastOpenFiles": [
     "Chapter 4 - Security.md",
     "Chapter 6 - Elastic Compute Cloud (EC2).md",
+<<<<<<< HEAD
     "Screenshot 2024-04-01 at 17.44.42.png",
     "Chapter 3 - Simple Storage Service (S3).md",
+=======
+    "img/Pasted image 20240628011926.png",
+>>>>>>> 68e3432174835f17f7e81c21b1f831bb84351536
     "img/Screenshot 2024-03-27 at 19.43.21.png",
     "img/Screenshot 2024-03-27 at 19.32.07.png",
     "img/Screenshot 2024-03-27 at 18.27.26 1.png",
