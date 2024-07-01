@@ -1,50 +1,22 @@
 {
   "main": {
-    "id": "f0884606e7dafff4",
+    "id": "5cfebd0bc65b4d30",
     "type": "split",
     "children": [
       {
-        "id": "34987c7ba370cba9",
+        "id": "5de7fb16fe1355a0",
         "type": "tabs",
-<<<<<<< HEAD
-        "dimension": 17.301038062283737,
-=======
->>>>>>> 68e3432174835f17f7e81c21b1f831bb84351536
         "children": [
           {
-            "id": "93c384dadfbd3c02",
-            "type": "leaf",
-            "state": {
-<<<<<<< HEAD
-              "type": "markdown",
-              "state": {
-                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "a2472ec136c095aa",
-        "type": "tabs",
-        "dimension": 82.69896193771626,
-        "children": [
-          {
-            "id": "50b5cc79d1cc7c70",
+            "id": "e62ee2e6a6d73857",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
+                "file": "Chapter 8 - ECS & Containers.md",
                 "mode": "source",
                 "source": false
               }
-=======
-              "type": "empty",
-              "state": {}
->>>>>>> 68e3432174835f17f7e81c21b1f831bb84351536
             }
           }
         ]
@@ -53,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e69a28595c160920",
+    "id": "a7819de1a7b74fb3",
     "type": "split",
     "children": [
       {
-        "id": "e5bd2b0b21d7ac52",
+        "id": "b124f00776c1b846",
         "type": "tabs",
         "children": [
           {
-            "id": "dc2b812c6a132a57",
+            "id": "3166932b7a20db0d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -71,12 +43,12 @@
             }
           },
           {
-            "id": "5292730d55a46a15",
+            "id": "8f89fad549747951",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#cloud",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +58,7 @@
             }
           },
           {
-            "id": "1a2bbcdfe4b67760",
+            "id": "c8b59ac2739b10ab",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -97,23 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "f7b3c7dc6a461d9e",
+    "id": "b26d203091a77cff",
     "type": "split",
     "children": [
       {
-        "id": "6ae7d39b49e3ce4a",
+        "id": "4766c0e7dacba2a8",
         "type": "tabs",
         "children": [
           {
-            "id": "061309d2c99ce4ef",
+            "id": "4d56f8cc6f99c9ad",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
+                "file": "Chapter 8 - ECS & Containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,19 +97,19 @@
             }
           },
           {
-            "id": "f3c042aae47adb1a",
+            "id": "dccd4c78b813eca8",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
+                "file": "Chapter 8 - ECS & Containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "1066ca38a3effd12",
+            "id": "f56b68f6862c5810",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -148,12 +120,12 @@
             }
           },
           {
-            "id": "c3d75fea8838dff3",
+            "id": "2cf55f8ac4d7a03d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md"
+                "file": "Chapter 8 - ECS & Containers.md"
               }
             }
           }
@@ -161,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,40 +145,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "93c384dadfbd3c02",
+  "active": "e62ee2e6a6d73857",
   "lastOpenFiles": [
-    "Chapter 4 - Security.md",
+    "Chapter 7 - Monitoring and Logging.md",
+    "Chapter 8 - ECS & Containers.md",
     "Chapter 6 - Elastic Compute Cloud (EC2).md",
-<<<<<<< HEAD
-    "Screenshot 2024-04-01 at 17.44.42.png",
-    "Chapter 3 - Simple Storage Service (S3).md",
-=======
-    "img/Pasted image 20240628011926.png",
->>>>>>> 68e3432174835f17f7e81c21b1f831bb84351536
-    "img/Screenshot 2024-03-27 at 19.43.21.png",
-    "img/Screenshot 2024-03-27 at 19.32.07.png",
-    "img/Screenshot 2024-03-27 at 18.27.26 1.png",
-    "img/Screenshot 2024-03-27 at 18.27.26.png",
-    "img/Screenshot 2024-03-27 at 15.44.51.png",
-    "img/Screenshot 2024-03-27 at 15.35.43.png",
-    "img/Screenshot 2024-03-27 at 15.28.01.png",
-    "Chapter 5 - Virtual Private Cloud (VPCs).md",
-    "Chapter 1 - AWS fundamentals.md",
-    "img/Screenshot 2024-03-26 at 16.19.40.png",
-    "img/Screenshot 2024-03-26 at 16.12.41.png",
-    "Network Address Translation (NAT).md",
-    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
-    "DNS.md",
-    "Untitled",
-    "The OSI Model.md",
-    "SSL & TLS.md",
-    "Networking Basics.md",
-    "AWS - AWS Learning.md",
-    "Digital Signatures.md",
-    "Elastic Compute Cloud (EC2) Basics.md",
-    "Kubernetes.md",
-    "Encryption & Hashing.md",
-    "img",
-    "Welcome.md"
+    "img/Screenshot 2024-07-01 at 17.30.03.png",
+    "img/Screenshot 2024-07-01 at 18.02.17.png",
+    "img/Screenshot 2024-07-01 at 18.01.43.png",
+    "img/Screenshot 2024-07-01 at 17.45.44.png",
+    "img/Screenshot 2024-07-01 at 17.37.40.png",
+    "Chapter 5 - Virtual Private Cloud (VPCs).md"
   ]
 }

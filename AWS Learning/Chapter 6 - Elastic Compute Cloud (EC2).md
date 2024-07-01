@@ -325,3 +325,16 @@ Each network interface has the following characteristics:
 ## EC2 Purchase Options
 >>>>>>> 68e3432174835f17f7e81c21b1f831bb84351536
 
+
+## Write about instance metadata!!!!!!
+
+
+
+
+
+
+
+# Next Chapter : [[Chapter 7 - Monitoring and Logging]]
+
+#AWS_Learning 
+
