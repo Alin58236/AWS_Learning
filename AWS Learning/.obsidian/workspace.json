@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
+                "file": "Chapter 8 - ECS & Containers.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
+                "file": "Chapter 8 - ECS & Containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
+                "file": "Chapter 8 - ECS & Containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md"
+                "file": "Chapter 8 - ECS & Containers.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   },
   "active": "93c384dadfbd3c02",
   "lastOpenFiles": [
+    "Chapter 7 - Monitoring and Logging.md",
+    "Chapter 6 - Elastic Compute Cloud (EC2).md",
     "img/Screenshot 2024-07-01 at 18.02.17.png",
     "img/Screenshot 2024-07-01 at 18.01.43.png",
     "img/Screenshot 2024-07-01 at 17.45.44.png",
@@ -156,13 +158,10 @@
     "img/Screenshot 2024-07-01 at 17.30.03.png",
     "img/Screenshot 2024-04-01 at 17.44.42.png",
     "Chapter 8 - ECS & Containers.md",
-    "Chapter 7 - Monitoring and Logging.md",
     "Screenshot 2024-04-01 at 17.44.42.png",
-    "Chapter 6 - Elastic Compute Cloud (EC2).md",
     "img/Pasted image 20240628011926.png",
     "img/Screenshot 2024-03-27 at 19.43.21.png",
     "img/Screenshot 2024-03-27 at 19.32.07.png",
-    "img/Screenshot 2024-03-27 at 18.27.26 1.png",
     "Chapter 5 - Virtual Private Cloud (VPCs).md",
     "Chapter 4 - Security.md",
     "Chapter 1 - AWS fundamentals.md",
