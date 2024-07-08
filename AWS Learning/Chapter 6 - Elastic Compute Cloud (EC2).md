@@ -321,17 +321,102 @@ Each network interface has the following characteristics:
 
 **!!!! The public DNS (which is given to the VPC for the public ipv4 address) will resolve to the private IP if accessed from within the VPC, and to the public one if accessed from the internet
 
-
 ## EC2 Purchase Options
->>>>>>> 68e3432174835f17f7e81c21b1f831bb84351536
+
+### 1. **On-Demand Instances**
+
+- **Description**: Pay for compute capacity by the hour or second with no long-term commitments.
+- **Benefits**:
+    - No upfront costs or long-term commitments.
+    - Flexibility to increase or decrease compute capacity depending on the demands of your application.
+    - Ideal for short-term, irregular workloads that cannot be interrupted.
+- **Use Cases**:
+    - Development and testing environments.
+    - Applications with unpredictable workloads.
+    - Applications being developed or tested for the first time.
+
+### 2. **Reserved Instances (RIs)**
+
+- **Description**: Commit to using EC2 instances for a 1- or 3-year term to receive a significant discount compared to On-Demand pricing.
+- **Types**:
+    - **Standard Reserved Instances**: Offer up to 75% discount and are best for steady-state usage.
+    - **Convertible Reserved Instances**: Allow you to change the instance type and offer up to 54% discount.
+- **Benefits**:
+    - Significant cost savings for long-term commitments.
+    - Capacity reservation when needed (for standard RIs).
+- **Use Cases**:
+    - Applications with predictable usage that run continuously.
+    - Enterprises looking to save costs on long-term applications.
+
+### 3. **Savings Plans**
+
+- **Description**: Flexible pricing model offering lower prices on EC2, Lambda and Fargate usage in exchange for a commitment to a consistent amount of usage (measured in $/hour) for 1 or 3 years.
+- **Types**:
+    - **Compute Savings Plans**: Apply to any EC2 instance regardless of region, instance family, operating system, or tenancy.
+    - **EC2 Instance Savings Plans**: Apply to specific instance families within a region.
+- **Benefits**:
+    - Greater flexibility than Reserved Instances.
+    - Up to 72% savings compared to On-Demand prices.
+- **Use Cases**:
+    - Workloads with predictable usage patterns.
+    - Organizations looking for flexible saving options across different compute services.
+
+### 4. **Spot Instances**
+
+- **Description**: Purchase spare EC2 capacity at significantly reduced rates (up to 90% off On-Demand prices).
+- **Benefits**:
+    - Extremely cost-effective for workloads that can tolerate interruptions.
+    - Ideal for batch processing, big data analytics, and fault-tolerant workloads.
+- **Use Cases**:
+    - Data analysis, batch jobs, and background processing.
+    - Stateless or loosely coupled workloads.
+    - CI/CD workloads that can handle interruptions.
+
+### 5. **Dedicated Hosts**
+
+- **Description**: Physical servers dedicated to your use, allowing you to use your existing software licenses.
+- **Benefits**:
+    - Compliance and regulatory requirements.
+    - Use of existing server-bound software licenses.
+    - Better control over instance placement.
+- **Use Cases**:
+    - Highly regulated industries (e.g., healthcare, finance).
+    - Applications that require a physical server with dedicated resources.
+    - Licensing requirements that do not support multi-tenancy.
+
+### 6. **Dedicated Instances**
+
+- **Description**: Instances that run on hardware dedicated to a single customer, isolating them from instances of other customers.
+- **Benefits**:
+    - Isolation at the hardware level.
+    - Meet compliance requirements without needing a Dedicated Host.
+- **Use Cases**:
+    - Workloads requiring additional isolation.
+    - Organizations with strict compliance requirements.
+
+### 7. **Capacity Reservations**
+
+- **Description**: Reserve capacity in a specific Availability Zone for any duration.
+- **Benefits**:
+    - Ensures you have the capacity when you need it.
+    - Can be combined with Reserved Instances for cost savings.
+- **Use Cases**:
+    - Applications with urgent capacity needs.
+    - Ensuring capacity for future scaling needs.
 
 
-## Write about instance metadata!!!!!!
 
+## Status Checks and Auto Recovery
 
+Each instance has 2 status checks:
+1. for things like loss of system power, network, software and hardware issues
+2. for instance related stuff like corrupt file systems, OS Kernel issues or incorrect networking
 
+Auto recovery moves the instance to a new host with the same config as before ( all IP addressing is maintained )
 
+Status checks can be performed periodically and in case of failures they can trigger alarms.
 
+For termination protection we need to modify the 'disableApiTermination' attribute.
 
 
 # Next Chapter : [[Chapter 7 - Monitoring and Logging]]
