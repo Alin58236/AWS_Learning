@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "5cfebd0bc65b4d30",
+    "id": "f0884606e7dafff4",
     "type": "split",
     "children": [
       {
-        "id": "5de7fb16fe1355a0",
+        "id": "34987c7ba370cba9",
         "type": "tabs",
         "children": [
           {
-            "id": "e62ee2e6a6d73857",
+            "id": "93c384dadfbd3c02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 8 - ECS & Containers.md",
+                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a7819de1a7b74fb3",
+    "id": "e69a28595c160920",
     "type": "split",
     "children": [
       {
-        "id": "b124f00776c1b846",
+        "id": "e5bd2b0b21d7ac52",
         "type": "tabs",
         "children": [
           {
-            "id": "3166932b7a20db0d",
+            "id": "dc2b812c6a132a57",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,12 +43,12 @@
             }
           },
           {
-            "id": "8f89fad549747951",
+            "id": "5292730d55a46a15",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#cloud",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "c8b59ac2739b10ab",
+            "id": "1a2bbcdfe4b67760",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +69,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
-    "id": "b26d203091a77cff",
+    "id": "f7b3c7dc6a461d9e",
     "type": "split",
     "children": [
       {
-        "id": "4766c0e7dacba2a8",
+        "id": "6ae7d39b49e3ce4a",
         "type": "tabs",
         "children": [
           {
-            "id": "4d56f8cc6f99c9ad",
+            "id": "061309d2c99ce4ef",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 8 - ECS & Containers.md",
+                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +98,19 @@
             }
           },
           {
-            "id": "dccd4c78b813eca8",
+            "id": "f3c042aae47adb1a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 8 - ECS & Containers.md",
+                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "f56b68f6862c5810",
+            "id": "1066ca38a3effd12",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +121,12 @@
             }
           },
           {
-            "id": "2cf55f8ac4d7a03d",
+            "id": "c3d75fea8838dff3",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 8 - ECS & Containers.md"
+                "file": "Chapter 6 - Elastic Compute Cloud (EC2).md"
               }
             }
           }
@@ -133,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -145,16 +147,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e62ee2e6a6d73857",
+  "active": "93c384dadfbd3c02",
   "lastOpenFiles": [
-    "Chapter 7 - Monitoring and Logging.md",
-    "Chapter 8 - ECS & Containers.md",
-    "Chapter 6 - Elastic Compute Cloud (EC2).md",
-    "img/Screenshot 2024-07-01 at 17.30.03.png",
     "img/Screenshot 2024-07-01 at 18.02.17.png",
     "img/Screenshot 2024-07-01 at 18.01.43.png",
     "img/Screenshot 2024-07-01 at 17.45.44.png",
     "img/Screenshot 2024-07-01 at 17.37.40.png",
-    "Chapter 5 - Virtual Private Cloud (VPCs).md"
+    "img/Screenshot 2024-07-01 at 17.30.03.png",
+    "img/Screenshot 2024-04-01 at 17.44.42.png",
+    "Chapter 8 - ECS & Containers.md",
+    "Chapter 7 - Monitoring and Logging.md",
+    "Screenshot 2024-04-01 at 17.44.42.png",
+    "Chapter 6 - Elastic Compute Cloud (EC2).md",
+    "img/Pasted image 20240628011926.png",
+    "img/Screenshot 2024-03-27 at 19.43.21.png",
+    "img/Screenshot 2024-03-27 at 19.32.07.png",
+    "img/Screenshot 2024-03-27 at 18.27.26 1.png",
+    "Chapter 5 - Virtual Private Cloud (VPCs).md",
+    "Chapter 4 - Security.md",
+    "Chapter 1 - AWS fundamentals.md",
+    "Chapter 3 - Simple Storage Service (S3).md",
+    "Network Address Translation (NAT).md",
+    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
+    "DNS.md",
+    "Untitled",
+    "The OSI Model.md",
+    "SSL & TLS.md",
+    "Networking Basics.md",
+    "AWS - AWS Learning.md",
+    "Digital Signatures.md",
+    "Elastic Compute Cloud (EC2) Basics.md",
+    "Kubernetes.md",
+    "Encryption & Hashing.md",
+    "img",
+    "Welcome.md"
   ]
 }
