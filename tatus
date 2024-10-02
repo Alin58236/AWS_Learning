@@ -1,0 +1,87 @@
+[1mdiff --git a/.obsidian/workspace.json b/.obsidian/workspace.json[m
+[1mindex 8628e67..9471e56 100644[m
+[1m--- a/.obsidian/workspace.json[m
+[1m+++ b/.obsidian/workspace.json[m
+[36m@@ -11,8 +11,12 @@[m
+             "id": "310fc63a5533c597",[m
+             "type": "leaf",[m
+             "state": {[m
+[31m-              "type": "empty",[m
+[31m-              "state": {}[m
+[32m+[m[32m              "type": "markdown",[m
+[32m+[m[32m              "state": {[m
+[32m+[m[32m                "file": "AWS Learning/Chapter 8 - ECS & Containers.md",[m
+[32m+[m[32m                "mode": "source",[m
+[32m+[m[32m                "source": false[m
+[32m+[m[32m              }[m
+             }[m
+           }[m
+         ][m
+[36m@@ -81,6 +85,7 @@[m
+             "state": {[m
+               "type": "backlink",[m
+               "state": {[m
+[32m+[m[32m                "file": "AWS Learning/Chapter 8 - ECS & Containers.md",[m
+                 "collapseAll": false,[m
+                 "extraContext": false,[m
+                 "sortOrder": "alphabetical",[m
+[36m@@ -97,6 +102,7 @@[m
+             "state": {[m
+               "type": "outgoing-link",[m
+               "state": {[m
+[32m+[m[32m                "file": "AWS Learning/Chapter 8 - ECS & Containers.md",[m
+                 "linksCollapsed": false,[m
+                 "unlinkedCollapsed": true[m
+               }[m
+[36m@@ -118,7 +124,9 @@[m
+             "type": "leaf",[m
+             "state": {[m
+               "type": "outline",[m
+[31m-              "state": {}[m
+[32m+[m[32m              "state": {[m
+[32m+[m[32m                "file": "AWS Learning/Chapter 8 - ECS & Containers.md"[m
+[32m+[m[32m              }[m
+             }[m
+           }[m
+         ][m
+[36m@@ -139,5 +147,13 @@[m
+     }[m
+   },[m
+   "active": "310fc63a5533c597",[m
+[31m-  "lastOpenFiles": [][m
+[32m+[m[32m  "lastOpenFiles": [[m
+[32m+[m[32m    "AWS Learning/Chapter 6 - Elastic Compute Cloud (EC2).md",[m
+[32m+[m[32m    "AWS Learning/Chapter 8 - ECS & Containers.md",[m
+[32m+[m[32m    "ecs containers/Dockerfile",[m
+[32m+[m[32m    "ecs containers/dockerexample.yaml",[m
+[32m+[m[32m    "ecs containers",[m
+[32m+[m[32m    "New folder",[m
+[32m+[m[32m    "AWS Learning/Chapter 1 - AWS fundamentals.md"[m
+[32m+[m[32m  ][m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/AWS Learning/Chapter 8 - ECS & Containers.md b/AWS Learning/Chapter 8 - ECS & Containers.md[m
+[1mindex 9948c4a..3d1a8d1 100644[m
+[1m--- a/AWS Learning/Chapter 8 - ECS & Containers.md[m	
+[1m+++ b/AWS Learning/Chapter 8 - ECS & Containers.md[m	
+[36m@@ -1,4 +1,18 @@[m
+ [m
+ Virtual machines share the same kernel, but all have different OSs that occupy a big amount of disk and memory. -> The need for virtual machines (which run on the same container engine).[m
+ [m
+[31m----> lesson 2[m
+\ No newline at end of file[m
+[32m+[m[32m### ECS (Elastic Container Service)[m
+[32m+[m
+[32m+[m[32mECS is for containers what ec2 is for docker images -> it manages containers in 1 of 2 modes[m
+[32m+[m[32m1.  EC2 Mode - uses ec2 instances as container hosts[m
+[32m+[m[32m2.  Fargate Mode - serverless, AWS manages the container hosts[m
+[32m+[m
+[32m+[m[32mECS runs in a *cluster*, and the images must be in a *registry* (either *DOCKERHUB* or *ECR - Elastic Container Registry*)[m
+[32m+[m
+[32m+[m[32mTo use ECS we need to create a :[m
+[32m+[m[32m- **Container Definition** (which port to use, pointer to where the container is stored, image, etc.)[m[41m [m
+[32m+[m[32m- **Task Definition** - defines application as a whole (security, containers ,resources used by the task CPU, mem etc. )[m
+[32m+[m	[32m- in the task definition there is the TASK ROLE (To give containers in the ECS the access they need to communicate with AWS[m[41m [m
+[32m+[m	[32m- **A task definition can include one or more containers**[m
+[32m+[m[32m- **Service Definition** - defines an *ECS Service* (instructions on how to balance, scale and restart the EC2s)[m
+[41m+[m
