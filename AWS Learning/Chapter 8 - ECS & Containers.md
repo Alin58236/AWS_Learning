@@ -16,3 +16,36 @@ To use ECS we need to create a :
 	- **A task definition can include one or more containers**
 - **Service Definition** - defines an *ECS Service* (instructions on how to balance, scale and restart the EC2s)
 
+
+### Cluster Modes
+#### 1. EC2 Mode
+- out-of-the-box management high level components
+- the ECS cluster is created within a VPC on our AWS Account -> it benefits from multiple AZs
+- When the EC2 instances are provisioned, we WILL BE PAYING for them, regardless of the containers running on them
+#### 2. ECS - Fargate Mode
+- Serverless mode
+- out-of-the-box management, **no need to manage the ec2 instances yourself**
+- **no need to pay for the hosts**
+- the ec2 cluster resources are allocated from a shared pool, but we have no visibility of other customers
+- Different from the EC2 mode, the tasks are injected into your vpc, and each is given an **elastic network interface**
+
+
+### When to use the modes?
+
+1. ECS (EC2 Mode)
+	-  if you use containers
+	- Large workload, price consciousness
+
+2. EC2 
+	-  quickly test containers using ec2 as a docker host
+
+3. ECS (Fargate)
+	- Large workload, overhead consciousness
+	- small / burst loads
+	- batch loads
+
+### ECR ( Elastic Container Registry) - DockerHub but for AWS
+	- main advantage = integrated with IAM
+
+
+>>>> kubernetes 101
