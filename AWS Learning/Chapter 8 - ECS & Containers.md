@@ -48,4 +48,53 @@ To use ECS we need to create a :
 	- main advantage = integrated with IAM
 
 
->>>> kubernetes 101
+
+### Kubernetes 101
+
+##### Cluster structure:
+1. ***Cluster control plane***:
+	1. it contains multiple compute resources that work as one unit
+	2. it controls the applications, scaling and deploying
+	3. Contains **NODES** which can be VMs or servers inside the cluster
+	4. Contains the **kube-apiserver** (the front-end of the cluster, can be horizontally scaled)
+	5. Contains the **etcd** - key-value store
+	6. Contains the **kube-scheduler** assigns the resources to the pods
+	7. Contains the **cloud-control-manager** which is a cloud specific control component
+	8. Contains the **Kube-controller-manager** which contains the following processes:
+		1. Node Controller 
+		2. Job Controller
+		3. Endpoint Controller
+		4. Service Accounts & Token Controllers
+
+2. ***Nodes***
+	1. these contain one of 2 software runtimes:
+		1. **containerd** 
+		2. **Docker**
+	2. Also contain *kubelets* : agents that talk to the Cluster Control Plane
+	3. Contain **PODS** that contain the actual applications (but usually is one pod / container)
+	4. Contains a **k-proxy**
+
+3. **Ingress**
+	1. A way to get into a service, hosted on a pod, from the outside of the cluster 
+
+
+
+### Elastic Kubernetes Service (EKS) 101
+
+- EKS is a Kubernetes Service Managed by AWS - open source and cloud agnostic
+- The Cluster Control Plane scales and runs in multiple AZs 
+- Integrates with VPCs, and other AWS Services
+- EKS Cluster = EKS Control Plane + EKS Nodes
+- **etcd** is distributed across multiple AZs
+- Nodes can be:
+	- self-managed
+	- managed node groups
+	- Fargate nodes
+
+Architecture:
+![[Screenshot 2024-10-06 at 15.53.20.png]]
+
+
+# Next Chapter : [[Chapter 9 - Advanced EC2]]
+
+#AWS_Learning 
