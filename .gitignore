@@ -1,3 +1,4 @@
 aws.txt
 *.pem
 .obsidian/workspace.json
+.obsidian/*
