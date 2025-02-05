@@ -16,7 +16,7 @@ It's limited to 16 kb of user-data. It can be changed when the instance stops, b
 
 --DEMO--
 
-!! Better use cloudFormation!
+!! Better use cloudFormation !!
 
 
 ### EC2 Instance Roles
