@@ -88,5 +88,5 @@ All instances in the same AZ as the Placement Group (which is located in the sam
 
 
 
-
+Next Chapter: [[Chapter 10 - CloudFormation]]
 
