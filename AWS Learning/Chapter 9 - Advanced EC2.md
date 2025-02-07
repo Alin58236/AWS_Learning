@@ -34,4 +34,59 @@ It's limited to 16 kb of user-data. It can be changed when the instance stops, b
 
 
 
-TODO // SSM Parameter Store!!!
+### SSM Parameter Store
+
+The SSM Parameter store is a service which is part of Systems Manager which allows the storage and retrieval of parameters - string, stringlist or secure string.
+
+The service supports encryption which integrates with KMS, versioning and can be secured using IAM.
+
+The service integrates natively with many AWS services - and can be accessed using the CLI/APIs from anywhere with access to the AWS Public Space Endpoints.
+
+### Logging on EC2
+
+- is done through CloudWatch
+- we need to install CW Agent on the EC2 instance and provide an agent config file
+- The CW Agent also needs rights to interact with AWS ( **we already know that it is bad practice to leave long term credentials in the instance -- hard to manage at scale --  so it is better suited to create an IAM Role for the CW Agent** )
+- we also need to have collectD installed on the ec2 instance. If we use amazon linux it will not be installed by default. To install it we need to first create :
+
+`$sudo mkdir -p /usr/share/collectd/`
+`$sudo touch /usr/share/collectd/types.db`
+
+
+### EC2 Placement Groups
+
+When you make an ec2 instance, AWS places it where it thinks it is best suited.
+
+There are **3 types of Placement Groups**:
+
+1. Cluster - close instances
+2. Spread - Separated, on different hardware
+3. Partition - groups of instances spread apart
+
+#### 1. Cluster
+
+All instances in the same AZ as the Placement Group (which is located in the same AZ EC2 Instance is first deployed) 
+
+- Same Rach/Hardware/Host 
+- 10Gbps p/ stream 
+- lowest latency
+- ONE AZ ONLY
+
+#### 2. Spread
+
+- Located on separate AZs, some in distinct Racks
+- Limited to 7 instances per AZ
+- Maximum availability
+- provides Infrastructure isolation
+
+
+#### 3. Partitions
+
+- Divided into partitions
+- MAX 7 per AZ
+- Each partition has its own rack, not instances!!
+
+
+
+
+

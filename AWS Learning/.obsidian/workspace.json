@@ -53,12 +53,14 @@
             "id": "490706967b96bc39",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.4"
+                "file": "Chapter 9 - Advanced EC2.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
+              "title": "Chapter 9 - Advanced EC2"
             }
           }
         ],
