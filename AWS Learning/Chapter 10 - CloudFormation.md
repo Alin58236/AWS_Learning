@@ -18,4 +18,21 @@ S3 name is explicitly typed in our template -> non reusable template as S3 bucke
 
 Same for the AMI id if we switch the AWS Region!
 
-NEXT -> CloudFromation : Template and Pseudo Parameters
+### Template and Pseudo Parameters
+
+#### Template Params
+
+- the template params accept input - console/CLI/API
+- Can be referenced from logical resources
+- influence physical resources
+- configured with Defaults, AllowddValues, Min, Max, AllowedPatterns, NoEcho & Type
+
+#### Pseudo Params
+
+Are similar to template params only are provided by aws based in the environment when creating the stack!
+
+
+### CloudFormation Intrinsic Functions
+
+
+ 
