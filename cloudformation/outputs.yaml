@@ -1,0 +1,5 @@
+Outputs:
+  WordpressURL:
+    Description: "Instance Web URL"
+    Value: !Join ['', [ 'https://', !GetAtt Instance.DNSName] ]
+

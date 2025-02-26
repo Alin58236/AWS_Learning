@@ -35,4 +35,92 @@ Are similar to template params only are provided by aws based in the environment
 ### CloudFormation Intrinsic Functions
 
 
+AWS CloudFormation provides several built-in functions that help you manage your stacks. Use intrinsic functions in your templates to assign values to properties that are not available until runtime.
+
+You can use intrinsic functions only in specific parts of a template. Currently, you can use intrinsic functions in resource properties, outputs, metadata attributes, and update policy attributes. You can also use intrinsic functions to conditionally create stack resources.
+
+###### Functions:
+
+- [Fn::Base64](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-base64.html)
+- [Fn::Cidr](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-cidr.html)
+- [Condition functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-conditions.html)
+- [Fn::FindInMap](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html)
+- [Fn::ForEach](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-foreach.html)
+- [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html)
+- [Fn::GetAZs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getavailabilityzones.html)
+- [Fn::ImportValue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html)
+- [Fn::Join](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-join.html)
+- [Fn::Length](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-length.html)
+- [Fn::Select](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-select.html)
+- [Fn::Split](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-split.html)
+- [Fn::Sub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-sub.html)
+- [Fn::ToJsonString](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ToJsonString.html)
+- [Fn::Transform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-transform.html)
+- [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html)
+
+
+### CloudFormation Mappings
+
+- Templates can contain a **Mappings** Object
+- Maps keys to values
+- Can use !FindInMap Intrinsic function
+- Used to improve template portability
+- Mapping Example 
+
  
+![[Screenshot 2025-02-15 at 19.17.02.png]] 
+
+### Outputs
+
+- Templates can have an optional output section
+- makes outputs visible in the CLI and ConsoleUI
+- Accessible from a parent stack when using nesting
+
+### Conditions
+
+- **AND, EQUALS, IF, NOT, OR**
+- associated with logical resources to control if they are **created** or **not**
+- Can create custom conditions (ex. ONEAZ, TWOAZ, THREEAZ - translated to 'create the resources in 1 AZ, 2, or 3')
+
+
+
+![[Screenshot 2025-02-26 at 17.18.54.png]]
+
+### DependsOn
+
+A special condition that creates formal dependencies between logical resources in CF
+
+CF can do things in parallel, so we use this to determine a custom dependency order
+
+ex. **VPC -> SUBNET -> EC2**
+
+if A and B depend on C, CF will wait for C to be created before creating A and B
+
+With **DependsOn** we can specify a single resource, or a list of resources
+
+
+### Wait Conditions and cfn-signal
+
+The cfn-signal can configure CF to 'hold', wait for x number of success signals, or set a timeout
+
+If failure signal is received instead of a success one, the creation fails
+
+if timeout is reached, the creation fails
+
+This is achieved by using a resource called "CreationPolicy", or a "WaitCondition"
+
+#### Creation Policy
+
+![[Screenshot 2025-02-26 at 17.53.01.png]]
+- it uses signals
+
+#### Wait Condition
+
+- it can depend on other resources
+- uses a WaitHandle ( another resource )
+
+![[Screenshot 2025-02-26 at 17.56.31.png]]
+
+### Nested Stacks
+
+WIP
