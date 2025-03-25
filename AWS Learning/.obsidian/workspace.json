@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Chapter 10 - CloudFormation"
             }
+          },
+          {
+            "id": "f0ca2363bb59d0e9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +176,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84744a4bd3ece3c5",
+  "active": "f0ca2363bb59d0e9",
   "lastOpenFiles": [
     "img/Screenshot 2025-02-26 at 17.53.01.png",
     "Chapter 10 - CloudFormation.md",
