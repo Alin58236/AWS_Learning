@@ -123,4 +123,60 @@ This is achieved by using a resource called "CreationPolicy", or a "WaitConditio
 
 ### Nested Stacks
 
-WIP
+- Stacks have resource limits (500) -> problem for large deployments
+
+- Can't easily reference other stacks, as they are isolated
+- To reference we can use Nested Stacks or Cross-Stack-Referencing
+- ![[Screenshot 2025-03-27 at 15.50.21.png]]
+
+**These should be used only when everything is lifecycle linked**
+
+
+### Cross Reference Stacks
+
+- CFN Stacks are designed to be isolated and self-contained
+- In Cross-Stack References we can use (eg.) in Stack A the same VPC as Stack B
+- Outputs are normally not visible from other stacks (so we can't use Stack A outputs as Stack B Input Parameter). 
+- On the other side **Outputs can be exported** -> making them visible to other Stacks
+- Exports must have a unique name in the region
+- `Fn::ImportValue` can be used instead of `Ref`
+
+ ![[Screenshot 2025-03-27 at 16.06.24.png]]
+
+
+
+### Stack Sets
+
+- Deploy CFN stacks across many **accounts** and **regions**
+- Stack sets are ***containers*** in an **admin account**
+- These Contain Stack instances which reference stacks
+- each stack is in ***ONE REGION & ONE ACCOUNT***
+- security = self-managed roles or service-managed roles
+
+![[Screenshot 2025-03-27 at 17.09.48.png]]
+
+The stacks have the following params:
+1. Concurrent Accounts
+2. Failure Tolerance
+3. Retain Stacks
+
+
+### Deletion Policies
+
+If you delete a logical resource from a template -> by default, the **physical resource** is deleted
+
+This can cause data loss!
+
+With Deletion policies we can define if we want to delete (Default), Retain, or Snapshot
+
+Snapshots continue to exist past Stack lifetime -> costs -> we have to clean them up
+
+Only applies to **DELETE**, not **REPLACE**
+
+### CFN Stack Roles
+
+- When you create a stack, CFN uses the permissions of the logged in identity
+- This means that you need permissions for AWS
+- CFN can assume a role to gain the permissions
+
+-- Demo - wait conditions, cfnsignal, cfninit

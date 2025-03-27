@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "Chapter 10 - CloudFormation"
             }
-          },
-          {
-            "id": "f0ca2363bb59d0e9",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.9"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 8 - ECS & Containers.md",
+                "file": "Chapter 10 - CloudFormation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Chapter 8 - ECS & Containers"
+              "title": "Backlinks for Chapter 10 - CloudFormation"
             }
           },
           {
@@ -176,29 +163,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0ca2363bb59d0e9",
+  "active": "84744a4bd3ece3c5",
   "lastOpenFiles": [
-    "img/Screenshot 2025-02-26 at 17.53.01.png",
+    "Screenshot 2025-03-27 at 17.09.48.png",
+    "Chapter 5 - Virtual Private Cloud (VPCs).md",
     "Chapter 10 - CloudFormation.md",
+    "Chapter 9 - Advanced EC2.md",
+    "Chapter 8 - ECS & Containers.md",
+    "Screenshot 2025-03-27 at 16.06.24.png",
+    "Screenshot 2025-03-27 at 15.50.21.png",
+    "DNS.md",
+    "Networking Basics.md",
+    "Network Address Translation (NAT).md",
+    "The OSI Model.md",
+    "img/Screenshot 2025-02-26 at 17.53.01.png",
     "img/Screenshot 2025-02-26 at 17.56.31.png",
     "img/Screenshot 2025-02-26 at 17.18.54.png",
     "img/Screenshot 2024-10-06 at 18.40.22.png",
     "img/Screenshot 2025-02-15 at 19.17.02.png",
-    "Chapter 8 - ECS & Containers.md",
     "Chapter 4 - Security.md",
-    "Chapter 9 - Advanced EC2.md",
     "img/Screenshot 2024-10-06 at 16.18.37 1.png",
     "img/Screenshot 2024-10-06 at 15.53.20.png",
     "img/Screenshot 2024-10-06 at 16.18.37.png",
     "Chapter 7 - Monitoring and Logging.md",
-    "Network Address Translation (NAT).md",
-    "Chapter 5 - Virtual Private Cloud (VPCs).md",
     "Chapter 3 - Simple Storage Service (S3).md",
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
     "Encryption & Hashing.md",
     "AWS - AWS Learning.md",
-    "Chapter 6 - Elastic Compute Cloud (EC2).md",
-    "img/Screenshot 2024-07-01 at 17.30.03.png",
-    "img/Screenshot 2024-07-01 at 18.02.17.png"
+    "Chapter 6 - Elastic Compute Cloud (EC2).md"
   ]
 }
