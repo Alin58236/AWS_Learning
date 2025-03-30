@@ -11,10 +11,14 @@
             "id": "792401db9a4779a2",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront)"
             }
           },
           {
@@ -104,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront)"
             }
           },
           {
@@ -159,7 +164,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,12 +177,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "792401db9a4779a2",
+  "active": "3166932b7a20db0d",
   "lastOpenFiles": [
+    "img/Screenshot 2025-03-30 at 17.34.27.png",
     "Chapter 10 - CloudFormation.md",
     "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
     "Chapter 9 - Advanced EC2.md",
-    "Screenshot 2025-03-29 at 14.13.49.png",
+    "img/Screenshot 2025-03-29 at 14.13.49.png",
     "img/Screenshot 2025-03-27 at 15.50.21.png",
     "img/Screenshot 2025-03-27 at 17.09.48.png",
     "Chapter 5 - Virtual Private Cloud (VPCs).md",
