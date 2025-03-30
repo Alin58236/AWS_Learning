@@ -180,3 +180,39 @@ Only applies to **DELETE**, not **REPLACE**
 - CFN can assume a role to gain the permissions
 
 -- Demo - wait conditions, cfnsignal, cfninit
+
+
+### CFN Change Sets
+
+- Template -> Stack -> Physical Resources (***CREATION***)
+- Stack (***DELETE***) -> Deletion of Physical Resources
+- v2 Template -> Existing Stack -> Resources ***Change***
+
+***No*** Interruption , ***Some*** Interruption (eg. Reboot of EC2) ,  **Replacement**
+
+Change Sets allow us to apply new Templates to a stack, but instead of creating the immediately, it creates a Change set that we can overview.
+
+![[Screenshot 2025-03-29 at 14.13.49.png]]
+
+### CFN Custom Resources
+
+Custom resources enable you to write custom provisioning logic in templates that AWS CloudFormation runs anytime you create, update (if you changed the custom resource), or delete stacks
+eg. Populate an s3 bucket after creation, or delete its contents before deletion
+
+### Quiz
+
+1. What feature of cloudformation would you use to extend its functionality or integrate it with other system? -- **Custom Resources**
+2. You're designing a system using CloudFormation which has two distinct parts. Infrastructure (which includes a VPC , subnets, gateways and configuration) and multiple application instances. How should you design this using stack architecture? -- **Stack Exports/Imports ( Cross Stack Reference )**
+3. What feature of CloudFormation allows identities to deploy infrastructure in a controlled way, beyond their usual permissions? -- **Stack Roles**
+4. What feature of CloudFormation Is often used to improve portability and make a template able to adjust itself based on where it's applied? -- **Intrinsic Functions**
+5. Which feature of CloudFormation allows EC2 instances to update their configuration if a STACK changes? -- **CFN-HUP**
+6. Which feature of CloudFormation allows an instance to tell CloudFormation when it's finished bootstrapping and configuration? -- **CFN-SIGNAL**
+7. Which feature of CloudFormation allows it to be integrated into a Organisations Change management processes? -- **Change Sets**
+8. If you have two stacks which are always applied together (e.g VPC stack and App Stack) which feature of CloudFormation should you use? -- **Nested Stacks**
+9. If you need to deploy Infrastructure to multiple regions and accounts what CloudFormation feature should you use? -- **Stack Sets**
+10. Which feature of CloudFormation allows you to influence the order of resources created by CFN? -- **DependsOn**
+
+
+Next Chapter: [[Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront)]]
+
+#AWS_Learning 
