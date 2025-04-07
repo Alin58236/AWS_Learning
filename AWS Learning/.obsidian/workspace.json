@@ -20,20 +20,6 @@
               "icon": "lucide-file",
               "title": "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront)"
             }
-          },
-          {
-            "id": "d67ea97fa06f5339",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront)"
-            }
           }
         ]
       }
@@ -177,8 +163,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3166932b7a20db0d",
+  "active": "792401db9a4779a2",
   "lastOpenFiles": [
+    "Screenshot 2025-04-01 at 16.05.13.png",
+    "Screenshot 2025-04-01 at 14.48.44.png",
+    "Screenshot 2025-04-01 at 14.46.55.png",
     "img/Screenshot 2025-03-30 at 17.34.27.png",
     "Chapter 10 - CloudFormation.md",
     "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
@@ -196,10 +185,7 @@
     "img/Screenshot 2025-02-26 at 17.53.01.png",
     "img/Screenshot 2025-02-26 at 17.56.31.png",
     "img/Screenshot 2025-02-26 at 17.18.54.png",
-    "img/Screenshot 2024-10-06 at 18.40.22.png",
-    "img/Screenshot 2025-02-15 at 19.17.02.png",
     "Chapter 4 - Security.md",
-    "img/Screenshot 2024-10-06 at 16.18.37 1.png",
     "Chapter 7 - Monitoring and Logging.md",
     "Chapter 3 - Simple Storage Service (S3).md",
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
