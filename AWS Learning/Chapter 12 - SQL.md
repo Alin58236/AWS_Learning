@@ -188,3 +188,84 @@ THIS IS ONLY AUTHN! AUTHZ is managed by the DB engine!!!!!!!
 
 
 
+The architecture is ***VERY*** different from RDS
+
+It uses a cluster with one primary instance and 0 or more replicas
+
+Aurora doesn't use a local storage, it has a shared storage volume at a cluster level
+
+- Faster provisioning
+- improved performance
+- higher availability
+
+The shared storage is an ssd max to 128 TiB. All the replicas have access to all the storage nodes.
+The Storage segments are managed by AWS -> when a part of that storage fails, Aurora immediately repairs that part of the storage -> NO POINT IN TIME RESTORES because it uses data from other segments with no corruption
+
+- All Storage is SSD Based - high IOPS, low latency
+- It is billed differently than normal RDS engines
+- Up to 128 Tib Limit, you are billed per consumption
+- Storage that is freed up can be reused
+- Replicas can be added and removed without needing storage provisioning
+- Backups work the same as RDS
+- ***Restores*** create a new Cluster
+- ***Backtracks*** restore to a previous point in time
+- ***Fast Cloning*** makes a **Much** faster copy of the DB ( copy on write )
+- 
+
+
+#### Endpoints
+
+1. Cluster Endpoint -> always points at the primary instance
+2. Reader Endpoint -> points to primary if there are no replicas, points to ALL replicas if there are any ( load balancer )
+
+#### Billing 
+
+- No Free Tier
+- For Compute billing is hourly charge, per second, 10 minute minimum
+- Storage - GB/Month consumed, IO cost per request
+- 100% DB Size backups are included
+
+
+### Aurora Serverless
+
+- Service which is to Aurora what Fargate is to ECS
+- You don't need to statically provide a DB Instance of a certain size or manage them
+- Scalable - ***ACU*** - Aurora Capacity Units
+- Aurora Serverless has a ***MIN and MAX ACU***
+- Cluster adjusts based on load
+- Can go to 0 and be paused (less billing)
+- Billing per second
+- Same resilience as Aurora Provisioned ( 6 AZs )
+
+The ACUs are allocated by AWS from a common pool based on load
+
+![[Screenshot 2025-06-20 at 00.17.36.png]]
+
+
+#### Use Cases
+
+- Infrequently used application
+- New applications
+- Variable Workloads
+- Unpredictable workloads
+- DEV and QA DBs
+- Multi-tenant application
+
+
+
+### Secrets Manager
+
+- different than SSM Parameter Store
+- it does have functionality like the parameter store
+- designed for secrets
+- supports **automatic rotation** -> uses Lambda
+
+![[Screenshot 2025-06-20 at 00.23.55.png]]
+
+Secrets are encrypted using KMS!!!
+
+
+
+Next Chapter: [[Chapter 13 - EFS]]
+
+#AWS_Learning 

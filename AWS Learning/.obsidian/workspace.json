@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d9b5feab7048a24f",
+        "id": "1935e3902ed1b949",
         "type": "tabs",
         "children": [
           {
-            "id": "939451c34f2f5546",
+            "id": "8a78411c116bdc4e",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "img/Screenshot 2025-06-07 at 12.57.57.png"
-              },
-              "icon": "lucide-image",
-              "title": "Screenshot 2025-06-07 at 12.57.57"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -92,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "img/Screenshot 2025-06-07 at 12.57.57.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Screenshot 2025-06-07 at 12.57.57"
+              "title": "Backlinks"
             }
           },
           {
@@ -160,9 +157,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3166932b7a20db0d",
+  "active": "8a78411c116bdc4e",
   "lastOpenFiles": [
+    "Chapter 13 - EFS.md",
     "Chapter 12 - SQL.md",
+    "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
+    "img/Screenshot 2025-06-20 at 00.23.55.png",
+    "img/Screenshot 2025-06-20 at 00.23.07.png",
+    "img/Screenshot 2025-06-20 at 00.17.36.png",
+    "img/Screenshot 2025-06-07 at 12.57.57.png",
     "img/Screenshot 2025-06-19 at 18.26.47.png",
     "img/Screenshot 2025-06-19 at 18.19.51.png",
     "Encryption & Hashing.md",
@@ -171,15 +174,10 @@
     "Chapter 6 - Elastic Compute Cloud (EC2).md",
     "Chapter 5 - Virtual Private Cloud (VPCs).md",
     "img/Screenshot 2025-06-19 at 16.32.35.png",
-    "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
     "img/Screenshot 2025-06-07 at 12.59.13.png",
-    "img/Screenshot 2025-06-07 at 12.57.57.png",
     "img/Screenshot 2025-06-06 at 22.13.20.png",
     "Chapter 10 - CloudFormation.md",
     "img/Screenshot 2025-06-06 at 22.38.04.png",
-    "img/Screenshot 2025-06-06 at 22.34.34.png",
-    "img/Screenshot 2025-06-06 at 22.25.30.png",
-    "img/Screenshot 2025-06-06 at 22.21.01.png",
     "Chapter 9 - Advanced EC2.md",
     "Chapter 8 - ECS & Containers.md",
     "DNS.md",
