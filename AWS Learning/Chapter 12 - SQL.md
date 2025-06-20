@@ -266,6 +266,6 @@ Secrets are encrypted using KMS!!!
 
 
 
-Next Chapter: [[Chapter 13 - EFS]]
+Next Chapter: [[Chapter 13 - EFS ( Elastic File System)]]
 
 #AWS_Learning 

@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "1935e3902ed1b949",
+        "id": "8cafbda48e8c092f",
         "type": "tabs",
         "children": [
           {
-            "id": "8a78411c116bdc4e",
+            "id": "60183f5be6191912",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "image",
+              "state": {
+                "file": "img/Screenshot 2025-06-20 at 18.25.45.png"
+              },
+              "icon": "lucide-image",
+              "title": "Screenshot 2025-06-20 at 18.25.45"
             }
           }
         ]
@@ -90,6 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "img/Screenshot 2025-06-20 at 18.25.45.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Screenshot 2025-06-20 at 18.25.45"
             }
           },
           {
@@ -157,27 +160,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a78411c116bdc4e",
+  "active": "3166932b7a20db0d",
   "lastOpenFiles": [
-    "Chapter 13 - EFS.md",
+    "Chapter 14 - Scaling, Load Balancing & High-Availability.md",
+    "Chapter 13 - EFS ( Elastic File System).md",
     "Chapter 12 - SQL.md",
+    "img/Screenshot 2025-06-20 at 20.26.30.png",
+    "img/Screenshot 2025-06-20 at 20.25.37.png",
+    "img/Screenshot 2025-06-20 at 20.23.10.png",
+    "img/Screenshot 2025-06-20 at 20.22.12.png",
+    "img/Screenshot 2025-06-20 at 19.51.07.png",
+    "img/Screenshot 2025-06-20 at 18.25.45.png",
     "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
     "img/Screenshot 2025-06-20 at 00.23.55.png",
     "img/Screenshot 2025-06-20 at 00.23.07.png",
     "img/Screenshot 2025-06-20 at 00.17.36.png",
     "img/Screenshot 2025-06-07 at 12.57.57.png",
-    "img/Screenshot 2025-06-19 at 18.26.47.png",
-    "img/Screenshot 2025-06-19 at 18.19.51.png",
     "Encryption & Hashing.md",
     "AWS - AWS Learning.md",
     "Chapter 3 - Simple Storage Service (S3).md",
     "Chapter 6 - Elastic Compute Cloud (EC2).md",
     "Chapter 5 - Virtual Private Cloud (VPCs).md",
-    "img/Screenshot 2025-06-19 at 16.32.35.png",
-    "img/Screenshot 2025-06-07 at 12.59.13.png",
-    "img/Screenshot 2025-06-06 at 22.13.20.png",
     "Chapter 10 - CloudFormation.md",
-    "img/Screenshot 2025-06-06 at 22.38.04.png",
     "Chapter 9 - Advanced EC2.md",
     "Chapter 8 - ECS & Containers.md",
     "DNS.md",
