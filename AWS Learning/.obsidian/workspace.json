@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8cafbda48e8c092f",
+        "id": "38399f6b6b3a2dac",
         "type": "tabs",
         "children": [
           {
-            "id": "60183f5be6191912",
+            "id": "a76b215d904ec439",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "img/Screenshot 2025-06-20 at 18.25.45.png"
+                "file": "Chapter 14 - Scaling, Load Balancing & High-Availability.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Screenshot 2025-06-20 at 18.25.45"
+              "icon": "lucide-file",
+              "title": "Chapter 14 - Scaling, Load Balancing & High-Availability"
             }
           }
         ]
@@ -92,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "img/Screenshot 2025-06-20 at 18.25.45.png",
+                "file": "Chapter 14 - Scaling, Load Balancing & High-Availability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Screenshot 2025-06-20 at 18.25.45"
+              "title": "Backlinks for Chapter 14 - Scaling, Load Balancing & High-Availability"
             }
           },
           {
@@ -160,9 +162,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3166932b7a20db0d",
+  "active": "a76b215d904ec439",
   "lastOpenFiles": [
+    "Screenshot 2025-07-10 at 17.10.15.png",
+    "img/Screenshot 2025-07-10 at 13.53.22.png",
     "Chapter 14 - Scaling, Load Balancing & High-Availability.md",
+    "img/Screenshot 2025-07-10 at 17.02.37.png",
+    "img/Screenshot 2025-07-10 at 14.16.29.png",
+    "Chapter 3 - Simple Storage Service (S3).md",
+    "img/Screenshot 2025-06-20 at 18.25.45.png",
     "Chapter 13 - EFS ( Elastic File System).md",
     "Chapter 12 - SQL.md",
     "img/Screenshot 2025-06-20 at 20.26.30.png",
@@ -170,15 +178,10 @@
     "img/Screenshot 2025-06-20 at 20.23.10.png",
     "img/Screenshot 2025-06-20 at 20.22.12.png",
     "img/Screenshot 2025-06-20 at 19.51.07.png",
-    "img/Screenshot 2025-06-20 at 18.25.45.png",
     "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
     "img/Screenshot 2025-06-20 at 00.23.55.png",
-    "img/Screenshot 2025-06-20 at 00.23.07.png",
-    "img/Screenshot 2025-06-20 at 00.17.36.png",
-    "img/Screenshot 2025-06-07 at 12.57.57.png",
     "Encryption & Hashing.md",
     "AWS - AWS Learning.md",
-    "Chapter 3 - Simple Storage Service (S3).md",
     "Chapter 6 - Elastic Compute Cloud (EC2).md",
     "Chapter 5 - Virtual Private Cloud (VPCs).md",
     "Chapter 10 - CloudFormation.md",
