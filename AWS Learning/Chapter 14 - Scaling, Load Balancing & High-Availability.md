@@ -155,3 +155,7 @@ ASG asses the instances using health checks
 - can be more application aware (Layer 7)
 - Health Check grace period (default 300s - 5min) - Delay before starting checks -> allows system launch, bootstrapping, and application start
 
+
+Next Chapter: [[Chapter 15 - AWS Code*]]
+
+#AWS_Learning 
