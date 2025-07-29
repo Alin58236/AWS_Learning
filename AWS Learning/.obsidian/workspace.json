@@ -4,39 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "38399f6b6b3a2dac",
+        "id": "1ebdc596c140ac8f",
         "type": "tabs",
         "children": [
           {
-            "id": "4c45e22a184fff35",
+            "id": "7560bcdee6a24cf4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Chapter 15 - AWS Code*.md",
-                "mode": "source",
-                "source": false
+                "file": "img/Screenshot 2025-07-29 at 13.28.18.png"
               },
-              "icon": "lucide-file",
-              "title": "Chapter 15 - AWS Code*"
-            }
-          },
-          {
-            "id": "5aebaadb786ae5cc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Chapter 16 - Application Services, Event-Driven & Serverless.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Chapter 16 - Application Services, Event-Driven & Serverless"
+              "icon": "lucide-image",
+              "title": "Screenshot 2025-07-29 at 13.28.18"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "b26d203091a77cff",
@@ -109,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 16 - Application Services, Event-Driven & Serverless.md",
+                "file": "img/Screenshot 2025-07-29 at 13.28.18.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Chapter 16 - Application Services, Event-Driven & Serverless"
+              "title": "Backlinks for Screenshot 2025-07-29 at 13.28.18"
             }
           },
           {
@@ -165,7 +148,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,23 +161,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5aebaadb786ae5cc",
+  "active": "3166932b7a20db0d",
   "lastOpenFiles": [
     "Chapter 16 - Application Services, Event-Driven & Serverless.md",
+    "img/Screenshot 2025-07-29 at 22.22.50.png",
+    "img/Screenshot 2025-07-29 at 22.21.42.png",
+    "img/Screenshot 2025-07-29 at 22.19.02.png",
+    "img/Screenshot 2025-07-29 at 22.09.22.png",
+    "img/Screenshot 2025-07-29 at 22.04.48.png",
+    "img/Screenshot 2025-07-29 at 21.56.12.png",
+    "img/Screenshot 2025-07-29 at 20.53.42.png",
+    "img/Screenshot 2025-07-29 at 18.34.02.png",
+    "img/Screenshot 2025-07-29 at 18.31.25.png",
+    "img/Screenshot 2025-07-29 at 14.20.19.png",
     "Chapter 15 - AWS Code*.md",
     "Chapter 14 - Scaling, Load Balancing & High-Availability.md",
-    "img/Screenshot 2025-07-21 at 11.36.20.png",
-    "img/Screenshot 2025-07-21 at 11.39.26.png",
-    "img/Screenshot 2025-07-21 at 11.37.15.png",
-    "img/Screenshot 2025-07-21 at 11.36.37.png",
-    "img/Screenshot 2025-07-10 at 17.10.15.png",
-    "img/Screenshot 2025-07-21 at 11.35.09.png",
     "Chapter 13 - EFS ( Elastic File System).md",
-    "img/Screenshot 2025-07-10 at 13.53.22.png",
-    "img/Screenshot 2025-07-10 at 17.02.37.png",
-    "img/Screenshot 2025-07-10 at 14.16.29.png",
     "Chapter 3 - Simple Storage Service (S3).md",
-    "img/Screenshot 2025-06-20 at 18.25.45.png",
     "Chapter 12 - SQL.md",
     "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
     "Encryption & Hashing.md",
