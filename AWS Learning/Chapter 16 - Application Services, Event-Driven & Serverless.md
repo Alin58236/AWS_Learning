@@ -385,3 +385,12 @@ Note !  - for 5 different identity providers, we need 5 different configurations
 
 
 ![[Screenshot 2025-07-29 at 22.22.50.png]]
+
+
+
+
+
+
+Next Chapter: [[Chapter 17 - AWS Lambda In-Depth]]
+
+#AWS_Learning 
