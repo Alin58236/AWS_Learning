@@ -11,14 +11,12 @@
             "id": "b159ca75cc609d90",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Chapter 19 - NoSQL & DynamoDB.md",
-                "mode": "source",
-                "source": false
+                "file": "img/Screenshot 2025-08-01 at 00.08.29.png"
               },
-              "icon": "lucide-file",
-              "title": "Chapter 19 - NoSQL & DynamoDB"
+              "icon": "lucide-image",
+              "title": "Screenshot 2025-08-01 at 00.08.29"
             }
           }
         ]
@@ -163,27 +161,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b159ca75cc609d90",
+  "active": "3166932b7a20db0d",
   "lastOpenFiles": [
-    "Screenshot 2025-08-04 at 00.26.49.png",
-    "Screenshot 2025-08-03 at 23.57.31.png",
+    "Chapter 19 - NoSQL & DynamoDB.md",
+    "img/Screenshot 2025-08-04 at 00.26.49.png",
+    "img/Screenshot 2025-08-03 at 23.57.31.png",
     "Chapter 4 - Security.md",
     "Chapter 5 - Virtual Private Cloud (VPCs).md",
     "Chapter 3 - Simple Storage Service (S3).md",
     "Chapter 1 - AWS fundamentals.md",
     "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
-    "Chapter 19 - NoSQL & DynamoDB.md",
-    "Screenshot 2025-08-03 at 23.46.52.png",
-    "Screenshot 2025-08-03 at 23.44.49.png",
-    "Screenshot 2025-08-03 at 22.51.59.png",
-    "Screenshot 2025-08-03 at 22.39.16.png",
-    "Screenshot 2025-08-03 at 22.18.35.png",
-    "Screenshot 2025-08-03 at 22.15.35.png",
-    "Screenshot 2025-08-01 at 00.22.35.png",
-    "Screenshot 2025-08-01 at 00.08.29.png",
+    "img/Screenshot 2025-08-03 at 23.46.52.png",
+    "img/Screenshot 2025-08-03 at 23.44.49.png",
+    "img/Screenshot 2025-08-03 at 22.51.59.png",
+    "img/Screenshot 2025-08-03 at 22.39.16.png",
+    "img/Screenshot 2025-08-03 at 22.18.35.png",
+    "img/Screenshot 2025-08-03 at 22.15.35.png",
+    "img/Screenshot 2025-08-01 at 00.22.35.png",
+    "img/Screenshot 2025-08-01 at 00.08.29.png",
     "Chapter 17 - AWS Lambda In-Depth.md",
     "Chapter 18 - API and API Gateway In-Depth.md",
-    "img/Screenshot 2025-07-31 at 11.35.02.png",
     "Chapter 16 - Application Services, Event-Driven & Serverless.md",
     "Chapter 15 - AWS Code*.md",
     "Chapter 14 - Scaling, Load Balancing & High-Availability.md",
