@@ -248,3 +248,8 @@ GSI are always eventually consistent.
 - pre-built connectors (JDBC, AWS Stuff)
 
 
+
+
+Next Chapter: [[Chapter 20 - Elastic Beanstalk (EB) In-Depth]]
+
+#AWS_Learning 

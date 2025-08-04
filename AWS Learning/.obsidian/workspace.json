@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "50b7235ccbeb8548",
+        "id": "36da46f04220b74a",
         "type": "tabs",
         "children": [
           {
-            "id": "b159ca75cc609d90",
+            "id": "a0d7accd8fb7a332",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "img/Screenshot 2025-08-01 at 00.08.29.png"
-              },
-              "icon": "lucide-image",
-              "title": "Screenshot 2025-08-01 at 00.08.29"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -163,24 +161,28 @@
   },
   "active": "3166932b7a20db0d",
   "lastOpenFiles": [
+    "Chapter 20 - Elastic Beanstalk (EB) In-Depth.md",
+    "img/Screenshot 2025-08-04 at 18.04.28.png",
+    "img/Screenshot 2025-08-04 at 17.43.42.png",
+    "img/Screenshot 2025-08-04 at 17.43.15.png",
+    "img/Screenshot 2025-08-04 at 17.42.20.png",
+    "img/Screenshot 2025-08-04 at 17.41.28.png",
+    "img/Screenshot 2025-08-04 at 17.40.19.png",
+    "img/Screenshot 2025-08-04 at 17.39.34.png",
     "Chapter 19 - NoSQL & DynamoDB.md",
-    "img/Screenshot 2025-08-04 at 00.26.49.png",
-    "img/Screenshot 2025-08-03 at 23.57.31.png",
-    "Chapter 4 - Security.md",
-    "Chapter 5 - Virtual Private Cloud (VPCs).md",
-    "Chapter 3 - Simple Storage Service (S3).md",
-    "Chapter 1 - AWS fundamentals.md",
-    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
-    "img/Screenshot 2025-08-03 at 23.46.52.png",
-    "img/Screenshot 2025-08-03 at 23.44.49.png",
-    "img/Screenshot 2025-08-03 at 22.51.59.png",
-    "img/Screenshot 2025-08-03 at 22.39.16.png",
-    "img/Screenshot 2025-08-03 at 22.18.35.png",
-    "img/Screenshot 2025-08-03 at 22.15.35.png",
-    "img/Screenshot 2025-08-01 at 00.22.35.png",
-    "img/Screenshot 2025-08-01 at 00.08.29.png",
-    "Chapter 17 - AWS Lambda In-Depth.md",
+    "AWS - AWS Learning - Developer Associate.md",
+    "img/Screenshot 2025-08-04 at 17.17.23.png",
     "Chapter 18 - API and API Gateway In-Depth.md",
+    "Chapter 7 - Monitoring and Logging.md",
+    "Chapter 6 - Elastic Compute Cloud (EC2).md",
+    "Chapter 5 - Virtual Private Cloud (VPCs).md",
+    "Chapter 4 - Security.md",
+    "Chapter 3 - Simple Storage Service (S3).md",
+    "Chapter 2 - IAM, ACCOUNTS AND AWS ORGANISATION.md",
+    "Chapter 1 - AWS fundamentals.md",
+    "img/Screenshot 2025-08-01 at 00.08.29.png",
+    "img/Screenshot 2025-08-04 at 00.26.49.png",
+    "Chapter 17 - AWS Lambda In-Depth.md",
     "Chapter 16 - Application Services, Event-Driven & Serverless.md",
     "Chapter 15 - AWS Code*.md",
     "Chapter 14 - Scaling, Load Balancing & High-Availability.md",
@@ -188,15 +190,11 @@
     "Chapter 12 - SQL.md",
     "Chapter 11 - Global Service Discovery and Content Delivery (R53 and CloudFront).md",
     "Encryption & Hashing.md",
-    "AWS - AWS Learning.md",
-    "Chapter 6 - Elastic Compute Cloud (EC2).md",
     "Chapter 10 - CloudFormation.md",
     "Chapter 9 - Advanced EC2.md",
     "Chapter 8 - ECS & Containers.md",
     "DNS.md",
     "Networking Basics.md",
-    "Network Address Translation (NAT).md",
-    "The OSI Model.md",
-    "Chapter 7 - Monitoring and Logging.md"
+    "Network Address Translation (NAT).md"
   ]
 }
